@@ -10,6 +10,9 @@
   </head>
 
   <body>
+   <%= javascript_pack_tag 'hello_vue' %>
     <%= yield %>
+  <%= javascript_pack_tag 'hello_vue' %>
+  <%# bin/webpackで、コンパイルして上げないと動かないはず%>
   </body>
 </html>
