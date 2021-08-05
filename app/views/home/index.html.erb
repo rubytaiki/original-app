@@ -1,0 +1,79 @@
+<header class='top-page-header'>
+  <div class='nav'>
+    <div class='lists-left'>
+      <div><%= link_to image_tag("islands.png",class:'islands-icon'), "/" %>
+      </div>
+      <div class='language-select'>
+        <div class='english-list'><%= link_to 'English', "#" %></div>
+        <div class='korea-list'><%= link_to 'Korean', "#" %></div>
+        <div class='china-list'><%= link_to 'Chinese', "#" %></div> 
+      </div>
+    </div>
+
+    <ul class="lists-right">
+      <li class="current"></li>
+      <li><a href="#">食べる</a></li>
+      <li><a href="#">泊まる</a></li>
+      <li><a href="#">対馬を知る</a></li>
+      <li><a href="#">壱岐を知る</a></li>
+      <li><a href="#">アクセス</a></li>
+      <li><a href="#">others</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="body">
+  <div class="body-text-box">
+    <p class="body-text" id="t1">～五感で感じる日本ふるさと～</p>
+    <p class="body-text" id="t2">日本遺産 国境の島 壱岐・対馬</p>
+    <p class="body-text" id="t3">
+      まだ誰も知らない、本来の日本の姿がここにある。
+    </p>
+  </div>
+      <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> 
+  <div class="wrapper">
+    <h1></h1>
+    <ul class="slider">
+      <li class="slider-item slider-item01"></li>
+      <li class="slider-item slider-item02"></li>
+      <li class="slider-item slider-item03"></li>
+    </ul>
+  <!--/wrapper-->
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
+</div>
+
+<div class='footer'>
+  <div class='footer-contents'>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>壱岐市について</h2>
+      <ul>
+        <li><%= link_to '壱岐市公式HP', "#", class: "footer-link" %></li>
+        <li><%= link_to '壱岐市観光局', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>対馬市について</h2>
+      <ul>
+        <li><%= link_to '対馬市公式HP', "#", class: "footer-link" %></li>
+        <li><%= link_to '対馬市観光局', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>離島の友</h2>
+      <ul>
+        <li><%= link_to '離島ガイド', "#", class: "footer-link" %></li>
+        <li><%= link_to '国境の島ガイドライン', "#", class: "footer-link" %></li>
+        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+  </div>
+  <%= link_to image_tag("tu_footer.png", class:"logo-white"), "#" %>
+  <%= link_to image_tag("20201013105250328fca7eb64.png", class:"logo-white"), "#" %>
+  <%= link_to image_tag("ik_footer.png", class:"logo-white"), "#" %>
+</div>
