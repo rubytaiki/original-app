@@ -1,0 +1,183 @@
+.top-page-header {
+  width: 100vw;
+  height: 15vh;
+  background-color:lightskyblue;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.lists-left {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+.islands-icon {
+  height: 8vw;
+}
+
+.language-select {
+  font-size: 15px;
+  margin-left: 1vw;
+  color: #FFF;
+}
+
+.english-list {
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.korean-list {
+  text-decoration: none;
+
+}
+
+.china-list {
+  text-decoration: none;
+  margin-top: 7px;
+}
+
+
+
+
+
+
+.lists-right{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  list-style: none;
+}
+
+.lists-right li a{
+  display: block;
+  padding:10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.lists-right li{
+  margin-bottom:20px;
+}
+
+.lists-right li a{
+  /*背景色の基点とするためrelativeを指定*/
+position: relative;
+}
+
+.lists-right li.current a,
+.lists-right li a:hover{
+  color:#0481A2;
+}
+
+.lists-right li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: left top;/*左上基点*/
+}
+
+/*現在地とhoverの設定*/
+.lists-right li.current a::after,
+.lists-right li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+.lead{
+  padding: 50px 20px;
+}
+
+
+
+
+
+
+
+
+
+/* 　　　　　　　　　　　　　　ボディー　　　　　　　　　　　　　　　　　　　*/
+.body{
+  position: relative;
+}
+.body-text-box{
+  z-index: 2;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  width: 84vw;
+  height: 77vh;
+  position: absolute;
+  top: 11vh;
+  left: 8vw;
+}
+
+.body-text{
+  font-size: 38px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.wrapper{
+  z-index: 1;
+}
+
+
+
+
+
+
+
+/* 　　　　　　　　　　　　　　フッター　　　　　　　　　　　　　　　　　　　*/
+
+.footer {
+  width: 100vw;
+  padding: 5vh 0;
+  color: #FFF;
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.furima-details {
+  margin: 0 4vw;
+}
+
+.footer-content-head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.logo-white {
+  width: 25vh;
+  vertical-align: bottom;
+}
