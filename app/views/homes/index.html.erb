@@ -56,13 +56,17 @@
           height="450" 
           style="border:1;" 
           allowfullscreen="" 
-          loading="lazy"></iframe>
+          loading="lazy">
+          <p>Your browser does not support iframes.</p>
+          </iframe>
 </div>
 <div class="iframe-youtube">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/mBtqbNumtTY" 
           title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          frameborder="1" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          <p>Your browser does not support iframes.</p>
+          </iframe>
 </div>
 
 
@@ -96,5 +100,5 @@
   <%= link_to image_tag("ik_footer.png", class:"logo-white"), "#" %>
   <% unless user_signed_in? %>
     <%= link_to "Are you a host?", new_user_session_path, class:"login" %>
-  <%end%>
+  <% end %>
 </div>
