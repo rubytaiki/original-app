@@ -19,7 +19,8 @@
       <li><a href="#">アクセス</a></li>
       <li><a href="#">others</a></li>
       <% if user_signed_in? %>
-        <li><a href="#">ユーザー様</a></li>
+        <li><%= link_to current_user.nickname, "#", class: "when-login" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "when-login" %></li>
       <% end %>
     </ul>
   </nav>

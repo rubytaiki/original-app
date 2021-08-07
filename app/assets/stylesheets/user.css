@@ -26,7 +26,7 @@
 }
 
 .title{
-  margin: 0 30%;
+  margin: 0 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,6 @@
 }
 
 .title p{
-  margin-bottom: ;
   font-size: 40px;
   font-family: inherit;
   letter-spacing: 0.1em;
@@ -67,7 +66,7 @@
   margin: 7% auto 3%;
   color: #fff;
   font-size: 18px;
-  display: block
+  display: block;
 }
 
 .actions input{
@@ -77,5 +76,6 @@
 
 .actions a{
   color: palevioletred;
+  margin-bottom: 2%;
 }
 
