@@ -1,9 +1,10 @@
 .top-page-header {
   width: 100vw;
   height: 15vh;
-  background-color:lightskyblue;
+  background-color:rgb(155 228 241);
   display: flex;
   align-items: center;
+  font-family: Hannotate SC;
 }
 
 .nav {
@@ -17,18 +18,26 @@
 
 .lists-left {
   font-size: 13px;
+  margin-left: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 200px;
 }
+
 .islands-icon {
   height: 8vw;
+  border-radius: 25px;
+  transition: box-shadow .5s;
+}
+.islands-icon:hover{
+  box-shadow: 0 12px 12px gray;
 }
 
+
 .language-select {
-  font-size: 15px;
-  margin-left: 1vw;
+  font-size: 20px;
+  margin-left: 2vw;
   color: #FFF;
 }
 
@@ -63,6 +72,7 @@
   padding:10px 20px;
   text-decoration: none;
   color: #333;
+  font-size: 20px;
 }
 
 .lists-right li{
@@ -88,7 +98,7 @@ position: relative;
     /*線の形状*/
     width: 80%;
     height: 2px;
-    background:#0481A2;
+    background:white;
     /*アニメーションの指定*/
     transition: all .3s;
     transform: scale(0, 1);/*X方向0、Y方向1*/
@@ -101,10 +111,6 @@ position: relative;
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
-/*========= レイアウトのためのCSS ===============*/
-.lead{
-  padding: 50px 20px;
-}
 
 
 
@@ -149,16 +155,15 @@ position: relative;
 
 .footer {
   width: 100vw;
-  padding: 5vh 0;
+  padding: 3vh 0;
   color: #FFF;
-  background-color: lightskyblue;
+  background-color: rgb(155 228 241);
   text-align: center;
 }
 
 .footer-contents {
   display: flex;
   justify-content: center;
-  margin-bottom: 5vh;
 }
 
 .furima-details {
@@ -180,4 +185,9 @@ position: relative;
 .logo-white {
   width: 25vh;
   vertical-align: bottom;
+}
+
+.host-page{
+  color:blanchedalmond;
+  font-size: 4px;
 }
