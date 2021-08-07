@@ -1,0 +1,81 @@
+.user-header {
+  width: 100vw;
+  padding: 3vh 0;
+  color: #FFF;
+  background-color: rgb(155 228 241);
+  text-align: center;
+}
+
+.contents-row{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://image.shutterstock.com/z/stock-vector-color-splash-abstract-cartoon-background-or-children-playground-banner-design-element-vector-718709662.jpg);
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+
+}
+
+.container{
+  width:60%;
+  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  background-color: white;
+  margin: 0 auto;
+  font-family: "游ゴシック", "YuGothic";
+
+  
+}
+
+.title{
+  margin: 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(155 228 241);
+}
+
+.title p{
+  margin-bottom: ;
+  font-size: 40px;
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  padding: 5% 0px;
+}
+
+
+.form{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.field{
+  width: 60%;
+  height: 15%;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+  margin: 5% auto;
+}
+
+.button, input{
+  width: 35vw;
+}
+
+.actions{
+  text-align: center;
+  width: 60%;
+  margin: 7% auto 3%;
+  color: #fff;
+  font-size: 18px;
+  display: block
+}
+
+.actions input{
+  width: 10vw;
+  margin-bottom: 2%;
+}
+
+.actions a{
+  color: palevioletred;
+}
+

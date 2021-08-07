@@ -1,0 +1,34 @@
+<%= render 'devise/shared/user_header' %>
+
+<div class="contents-row">
+  <div class="container">
+    <div class="title">
+    <p>Are you a host user?</p>
+    </div>
+    <div class="form"> 
+      <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <%= render 'devise/shared/error_messages', model: @user %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+      <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.label :remember_me_check_here %><br />
+        <%= f.check_box :remember_me %>
+      </div>
+      <% end -%>
+      <div class="actions">
+        <input type="submit" name="commit" value="Yes I am" data-disable-with="Log in">
+        <div class="registar-user">
+          <%= link_to "To be a host, click here", new_user_registration_path %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

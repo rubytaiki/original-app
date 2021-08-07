@@ -18,6 +18,9 @@
       <li><a href="#">壱岐を知る</a></li>
       <li><a href="#">アクセス</a></li>
       <li><a href="#">others</a></li>
+      <% if user_signed_in? %>
+        <li><a href="#">ユーザー様</a></li>
+      <% end %>
     </ul>
   </nav>
 </header>
@@ -42,11 +45,26 @@
     </ul>
   <!--/wrapper-->
   </div>
-</div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
 </div>
+
+<div class="iframe-map">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58845.87655566198!2d129.6729020592805!3d33.83685565665716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356a15f2dc42adf7%3A0x6f82f8c7c58faea8!2sSaruiwa%20(Monkey%20Rock)!5e0!3m2!1sen!2sjp!4v1628213530111!5m2!1sen!2sjp" 
+          width="600" 
+          height="450" 
+          style="border:1;" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+</div>
+<div class="iframe-youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mBtqbNumtTY" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 <div class='footer'>
   <div class='footer-contents'>
@@ -76,4 +94,7 @@
   <%= link_to image_tag("tu_footer.png", class:"logo-white"), "#" %>
   <%= link_to image_tag("20201013105250328fca7eb64.png", class:"logo-white"), "#" %>
   <%= link_to image_tag("ik_footer.png", class:"logo-white"), "#" %>
+  <% unless user_signed_in? %>
+    <%= link_to "Are you a host?", new_user_session_path, class:"login" %>
+  <%end%>
 </div>
