@@ -20,7 +20,7 @@
 
 .container{
   width:60%;
-  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  box-shadow: 0 0 10px rgba(41 41 41 0.2);
   background-color: white;
   margin: 0 auto;
   font-family: "游ゴシック", "YuGothic";
