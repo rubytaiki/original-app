@@ -34,7 +34,6 @@
         </div>
       </div>
       <div class="field">お住まいの島
-          <div class="weight-bold-text">カテゴリー</div>
           <%= f.collection_select(:island_id, Island.all, :id, :name, {}, {class:"select-box", id:"user-island"}) %>
       </div>
       <div class="actions">

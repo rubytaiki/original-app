@@ -1,6 +1,5 @@
 .contents-row{
   width: 100vw;
-  height: 100vh;
   background-image: url(https://image.shutterstock.com/z/stock-vector-color-splash-abstract-cartoon-background-or-children-playground-banner-design-element-vector-718709662.jpg);
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
@@ -44,11 +43,11 @@
 
 .field{
   width: 60%;
-  height: 15%;
   font-size: 1.3em;
   letter-spacing: 0.1em;
   border-radius: 5px;
   margin: 5% auto;
+  text-align: center;
 }
 
 .button, input{
@@ -58,20 +57,25 @@
 .actions{
   text-align: center;
   width: 60%;
-  margin: 7% auto 3%;
+  margin: auto;
+  padding-bottom: 4%;
   color: #fff;
   font-size: 18px;
   display: block;
 }
 
 .actions input{
-  width: 10vw;
-  margin-bottom: 2%;
+  width: 15vw;
+  margin-bottom: 7%;
 }
 
 .actions a{
   color: palevioletred;
   margin-bottom: 2%;
+}
+
+.registar-user {
+  margin-bottom: 3%;
 }
 
 
