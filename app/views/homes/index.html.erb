@@ -1,105 +1,36 @@
-<header class='top-page-header'>
-  <div class='nav'>
-    <div class='lists-left'>
-      <div><%= link_to image_tag("islands.png",class:'islands-icon'), "/" %>
-      </div>
-      <div class='language-select'>
-        <div class='english-list'><%= link_to 'English', "#" %></div>
-        <div class='korea-list'><%= link_to 'Korean', "#" %></div>
-        <div class='china-list'><%= link_to 'Chinese', "#" %></div> 
-      </div>
-    </div>
-
-    <ul class="lists-right">
-      <li class="current"></li>
-      <li><a href="#">食べる</a></li>
-      <li><a href="#">泊まる</a></li>
-      <li><a href="#">対馬を知る</a></li>
-      <li><a href="#">壱岐を知る</a></li>
-      <li><a href="#">アクセス</a></li>
-      <li><a href="#">others</a></li>
-      <% if user_signed_in? %>
-        <li><%= link_to current_user.nickname, "#", class: "when-login" %></li>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "when-login" %></li>
-      <% end %>
-    </ul>
-  </nav>
-</header>
+<%= render 'shared/header' %>
 
 <div class="body">
   <div class="body-text-box">
-    <p class="body-text" id="t1">～五感で感じる日本ふるさと～</p>
-    <p class="body-text" id="t2">日本遺産 国境の島 壱岐・対馬</p>
-    <p class="body-text" id="t3">
+    <p class="text-upper" id="t1">～五感で感じる日本ふるさと～</p>
+    <p class="text-middle" id="t2">日本遺産 国境の島 壱岐・対馬</p>
+    <p class="text-lower" id="t3">
       まだ誰も知らない、本来の日本の姿がここにある。
     </p>
   </div>
-      <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-      <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <div class="wrapper">
-    <h1></h1>
     <ul class="slider">
-      <li class="slider-item slider-item01"></li>
-      <li class="slider-item slider-item02"></li>
-      <li class="slider-item slider-item03"></li>
+      <li><%= image_tag "tushima-1.jpeg", width:'100%',height:'100%' %></li>
+      <li><%= image_tag "tushima-2.jpeg", width:'100%',height:'100%' %></li>
+      <li><%= image_tag "iki-1.jpeg", width:'100%', height:'100%' %></li>
+      <li><%= image_tag "iki-2.jpeg", width:'100%',height:'100%' %></li>
     </ul>
-  <!--/wrapper-->
   </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
 </div>
 
-<div class="iframe-map">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58845.87655566198!2d129.6729020592805!3d33.83685565665716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356a15f2dc42adf7%3A0x6f82f8c7c58faea8!2sSaruiwa%20(Monkey%20Rock)!5e0!3m2!1sen!2sjp!4v1628213530111!5m2!1sen!2sjp" 
-          width="600" 
-          height="450" 
-          style="border:1;" 
-          allowfullscreen="" 
-          loading="lazy">
-          <p>Your browser does not support iframes.</p>
-          </iframe>
-</div>
-<div class="iframe-youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/mBtqbNumtTY" 
-          title="YouTube video player" 
-          frameborder="1" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          <p>Your browser does not support iframes.</p>
-          </iframe>
-</div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    infinite: true,
+    adaptiveHeight: true
+  });
+});
+</script>
 
 
-<div class='footer'>
-  <div class='footer-contents'>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>壱岐市について</h2>
-      <ul>
-        <li><%= link_to '壱岐市公式HP', "#", class: "footer-link" %></li>
-        <li><%= link_to '壱岐市観光局', "#", class: "footer-link" %></li>
-      </ul>
-    </div>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>対馬市について</h2>
-      <ul>
-        <li><%= link_to '対馬市公式HP', "#", class: "footer-link" %></li>
-        <li><%= link_to '対馬市観光局', "#", class: "footer-link" %></li>
-      </ul>
-    </div>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>離島の友</h2>
-      <ul>
-        <li><%= link_to '離島ガイド', "#", class: "footer-link" %></li>
-        <li><%= link_to '国境の島ガイドライン', "#", class: "footer-link" %></li>
-        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
-      </ul>
-    </div>
-  </div>
-  <%= link_to image_tag("tu_footer.png", class:"logo-white"), "#" %>
-  <%= link_to image_tag("20201013105250328fca7eb64.png", class:"logo-white"), "#" %>
-  <%= link_to image_tag("ik_footer.png", class:"logo-white"), "#" %>
-  <% unless user_signed_in? %>
-    <%= link_to "Are you a host?", new_user_session_path, class:"login" %>
-  <% end %>
-</div>
+<%= render 'shared/footer' %>

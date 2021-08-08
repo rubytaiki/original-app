@@ -1,6 +1,5 @@
 .top-page-header {
   width: 100vw;
-  height: 15vh;
   background-color:rgb(155 228 241);
   display: flex;
   align-items: center;
@@ -13,6 +12,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0.1% 0;
 }
 
 
@@ -26,7 +26,8 @@
 }
 
 .islands-icon {
-  height: 8vw;
+  height: 13vh;
+  width: 8vw;
   border-radius: 25px;
   transition: box-shadow .5s;
 }
@@ -36,7 +37,7 @@
 
 
 .language-select {
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 2vw;
   color: #FFF;
 }
@@ -65,6 +66,7 @@
   display: flex;
   flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
   list-style: none;
+  margin-bottom: -2%;
 }
 
 .lists-right li a{
@@ -72,7 +74,7 @@
   padding:10px 20px;
   text-decoration: none;
   color: #333;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .lists-right li{
@@ -125,28 +127,52 @@ position: relative;
   position: relative;
 }
 .body-text-box{
+  text-align: center;
   z-index: 2;
-  background-color: whitesmoke;
-  opacity: 0.7;
-  width: 84vw;
-  height: 77vh;
+  background-color:rgba(255,255,255,0.55);
+  border-radius: 10px;
+  width: 75vw;
   position: absolute;
-  top: 11vh;
-  left: 8vw;
+  top: 15%;
+  left: 13%;
+  margin: auto;
+  font-family: "Times New Roman", "游明朝", YuMincho,"ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro", "HGS明朝E","メイリオ", "ＭＳ Ｐ明朝","MS PMincho",Meiryo, serif;
+  font-weight: bold;
+  text-shadow: white 1px 1px 6px, white -1px 1px 6px, white 1px -1px 6px, white -1px -1px 6px;
+  
+}
+.text-upper{
+  margin: 8% auto;
+  font-size: 2.45vw;
+
+}
+.text-middle{
+  margin: 8% auto;
+  font-size: 5vw;
+}
+.text-lower{
+  margin: 8% auto 15%;
+  font-size: 2.3vw;
 }
 
-.body-text{
-  font-size: 38px;
-  text-align: center;
-  padding-top: 5%;
-}
+
+
+
+/* 　　　　　　　　　　　　　　スライド　　　　　　　　　　　　　　　　　　　*/
 
 .wrapper{
   z-index: 1;
+  width: 100%; 
+}
+
+.slider li{
+  width: 100%;
 }
 
 
 
+
+/* 　　　　　　　　　　　　　　スライド　　　　　　　　　　　　　　　　　　　*/
 
 
 
@@ -190,4 +216,8 @@ position: relative;
 .host-page{
   color:blanchedalmond;
   font-size: 4px;
+}
+
+.footer-contents-lower{
+  margin: 0 auto;
 }

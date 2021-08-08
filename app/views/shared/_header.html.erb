@@ -1,0 +1,27 @@
+<header class='top-page-header'>
+  <div class='nav'>
+    <div class='lists-left'>
+      <div><%= link_to image_tag("islands.png",class:'islands-icon'), "/" %>
+      </div>
+      <div class='language-select'>
+        <div class='english-list'><%= link_to 'English', "#" %></div>
+        <div class='korea-list'><%= link_to 'Korean', "#" %></div>
+        <div class='china-list'><%= link_to 'Chinese', "#" %></div> 
+      </div>
+    </div>
+
+    <ul class="lists-right">
+      <li class="current"></li>
+      <li><a href="#">食べる</a></li>
+      <li><a href="#">泊まる</a></li>
+      <li><a href="#">対馬を知る</a></li>
+      <li><a href="#">壱岐を知る</a></li>
+      <li><a href="#">アクセス</a></li>
+      <li><a href="#">others</a></li>
+      <% if user_signed_in? %>
+        <li><%= link_to current_user.nickname, users_path, class: "when-login" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "when-login" %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>

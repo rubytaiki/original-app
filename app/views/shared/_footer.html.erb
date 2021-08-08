@@ -1,0 +1,34 @@
+<div class='footer'>
+  <div class='footer-contents'>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>壱岐市について</h2>
+      <ul>
+        <li><%= link_to '壱岐市公式HP', "#", class: "footer-link" %></li>
+        <li><%= link_to '壱岐市観光局', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>対馬市について</h2>
+      <ul>
+        <li><%= link_to '対馬市公式HP', "#", class: "footer-link" %></li>
+        <li><%= link_to '対馬市観光局', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>離島の友</h2>
+      <ul>
+        <li><%= link_to '離島ガイド', "#", class: "footer-link" %></li>
+        <li><%= link_to '国境の島ガイドライン', "#", class: "footer-link" %></li>
+        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contents-lower">
+    <%= link_to image_tag("tu_footer.png", class:"logo-white"), "#" %>
+    <%= link_to image_tag("heritage.png", class:"logo-white"), "#" %>
+    <%= link_to image_tag("iki-logo.png", class:"logo-white"), "#" %>
+  </div>
+    <% unless user_signed_in? %>
+      <a><%= link_to "Are you a host?", new_user_session_path, class:"login" %></a>
+    <% end %>
+</div>
