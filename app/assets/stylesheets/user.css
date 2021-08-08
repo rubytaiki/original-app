@@ -1,11 +1,3 @@
-.user-header {
-  width: 100vw;
-  padding: 3vh 0;
-  color: #FFF;
-  background-color: rgb(155 228 241);
-  text-align: center;
-}
-
 .contents-row{
   width: 100vw;
   height: 100vh;
@@ -100,14 +92,14 @@
 
 .hotel-data{
   margin: 0 ;
-  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  box-shadow: 0 0 10px rgba(41 41 41 0.2);
   background-color: white;
   margin: 0 auto;
 }
 
 .food-data{
   margin: 0 ;
-  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  box-shadow: 0 0 10px rgba(41 41 41 0.2);
   background-color: white;
   margin: 0 auto;
 }
