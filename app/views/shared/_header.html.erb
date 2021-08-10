@@ -14,8 +14,8 @@
       <li class="current"></li>
       <li><a href="#">食べる</a></li>
       <li><a href="#">泊まる</a></li>
-      <li><a href="#">対馬を知る</a></li>
-      <li><a href="#">壱岐を知る</a></li>
+      <li><%= link_to "対馬を知る", tushima_homes_path %></li>
+      <li><%= link_to "壱岐を知る", iki_homes_path %></li>
       <li><a href="#">アクセス</a></li>
       <li><a href="#">others</a></li>
       <% if user_signed_in? %>
