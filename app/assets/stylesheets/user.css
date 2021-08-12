@@ -1,3 +1,9 @@
+
+
+
+
+
+
 .contents-row{
   width: 100vw;
   background-image: url(https://image.shutterstock.com/z/stock-vector-color-splash-abstract-cartoon-background-or-children-playground-banner-design-element-vector-718709662.jpg);
@@ -79,31 +85,3 @@
 }
 
 
-/* 　　　　　　　　　　　　　　user top page　　　　　　　　　　　　　　　　　　　*/
-
-.to-page li{
-  text-decoration: none;
-}
-
-
-
-
-
-.registared-data{
-  width: 90%;
-  height: 30%;
-}
-
-.hotel-data{
-  margin: 0 ;
-  box-shadow: 0 0 10px rgba(41,41,41,0.2);
-  background-color: white;
-  margin: 0 auto;
-}
-
-.food-data{
-  margin: 0 ;
-  box-shadow: 0 0 10px rgba(41,41,41,0.2);
-  background-color: white;
-  margin: 0 auto;
-}

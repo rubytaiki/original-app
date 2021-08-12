@@ -1,0 +1,91 @@
+<%= render 'shared/header' %>
+
+<div class="contents-row">
+  <div class="title">
+  <p>Edit posts</p>
+  </div>
+  <div class="links">
+    <div class="page-new">
+      <div class="page-hotel"> 
+        <li><%= link_to "新規登録 ホテル", "/hotels/new" %></li>
+      </div>
+      <div class="page-food"> 
+        <li><%= link_to "新規登録 飲食店", "/foods/new" %></li>
+      </div>
+    </div>
+  </div>   
+      
+  <div class="registared-data">
+    <div class="hotel-title">ホテル一覧</div>
+    <ul class="hotel-data">
+      <% @hotels.each do |hotel| %>
+        <li class='list'>
+          <div class="more">
+            <ul>
+              <li><span><%= image_tag 'arrow_top.png' %></span></a>
+                <ul>
+                  <li><%= link_to '編集', "/hotels/#{hotel.id}/edit" %></li>
+                  <li><%= link_to '削除', "/hotels/#{hotel.id}", method: :delete %></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="photo-grid">
+            <p><%= image_tag hotel.image, class: "img" %><p>
+            <ul>
+              <li><%= "島: #{hotel.island.name}" %></li>
+              <li><%= "エリア: #{hotel.location.name}" %></li>
+              <li><%= "価格帯: #{hotel.price_range.name}" %></li>
+            </ul>
+          </div>
+          <div class="info-grid">
+            <ul class="info-field">
+              <li><%= hotel.hotel_name %></li>
+              <li><%= hotel.address %></li>
+              <li><%= hotel.tagline %></li>
+              <li><%= hotel.details %></li>
+              <li><%= hotel.google_url %></li>
+            </ul>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  <div class="food-title">飲食店一覧</div>
+    <ul class="food-data">
+      <% @foods.each do |food| %>
+        <li class='list'>
+          <div class="more">
+            <ul>
+              <li><span><%= image_tag 'arrow_top.png' %></span></a>
+                <ul>
+                  <li><%= link_to '編集', "/foods/#{food.id}/edit" %></li>
+                  <li><%= link_to '削除', "/foods/#{food.id}", method: :detele %></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="photo-grid">
+            <p><%= image_tag food.image, class: "img" %><p>
+            <ul>
+              <li><%= "島: #{food.island.name}" %></li>
+              <li><%= "ジャンル: #{food.genre.name}" %></li>
+              <li><%= "営業時間: #{food.opening_hour.name}" %></li>
+            </ul>
+          </div>
+          <div class="info-grid">
+            <ul class="info-field">
+              <li><%= food.store_name %></li>
+              <li><%= food.address %></li>
+              <li><%= food.tagline %></li>
+              <li><%= food.details %></li>
+              <li><%= food.google_url %></li>
+            </ul>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>  
+</div>
+
+<%= render 'shared/footer' %>

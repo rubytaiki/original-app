@@ -1,0 +1,61 @@
+<%= render 'shared/header' %>
+
+<div class="contents-row">
+  <div class="container">
+    <div class="title">
+      <p>hotels in your town</p>
+    </div>
+    <div class="form"> 
+      <%= form_with model: @hotel, local: true do |f| %>
+      <%= render 'shared/error_messages', model: @hotel %>
+      <div class="field">
+        <%# 商品画像  　　　　　　　　　　まだCSSついてない%>
+        <div class="img-upload">
+          <div class="weight-bold-text">
+            商品画像
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="click-upload">
+            <p>
+              クリックしてファイルをアップロード
+            </p>
+            <%= f.file_field :image, id:"hotel-image" %>
+          </div>
+        </div>
+      </div>
+        <%# /商品画像 　　　　　　　　　　　　　　　　　　　　%>
+
+      <div class="field">
+        <%= f.label :hotel_name %><br />
+        <%= f.text_area :hotel_name, autofocus: true %>
+      </div>
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_area :address, autofocus: true %>
+      </div>
+      <div class="field">
+        <%= f.label :tagline %><br />
+        <%= f.text_area :tagline,  placeholder:"キャッチコピーお願いします！" %>
+      </div>
+      <div class="field">
+        <%= f.label :google_url %><br />
+        <%= f.text_area :google_url, placeholder:"GoogleマップからのURL貼り付け" %>
+      </div>
+      <div class="field">
+        <%= f.label :details %><br />
+        <%= f.text_area :details, placeholder:"店舗紹介文 or URL" %>
+      </div>
+      <div class="field">所在地,エリア,価格帯
+          <%= f.collection_select(:island_id, Island.all, :id, :name, {}, {class:"select-box", id:"island"}) %>
+          <%= f.collection_select(:location_id, Location.all, :id, :name, {}, {class:"select-box", id:"hotel-location"}) %>
+          <%= f.collection_select(:price_range_id, PriceRange.all, :id, :name, {}, {class:"select-box", id:"price-range"}) %>
+      </div>
+      <div class="actions">
+        <input type="submit" name="commit" value="登録" data-disable-with="Register">
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= render 'shared/footer' %>

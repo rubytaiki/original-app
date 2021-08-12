@@ -1,0 +1,110 @@
+
+
+.links{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.page-new{
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+
+
+.page-hotel,
+.page-food{
+  width: 40%;
+  margin: 3%;
+  font-size: 30px;
+}
+
+.page-hotel li{
+  background-color: whitesmoke;
+}
+.page-food li{
+  background-color: whitesmoke;
+}
+
+
+
+/* 　　　　　　　　　　　　　　データ一覧　　　　　　　　　　　　　　　　　　　*/
+
+.registared-data{
+  width: 100%;
+}
+
+.food-title,
+.hotel-title{
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  text-align: center;
+  padding: 3%;
+  font-size: 1.25em;
+}
+
+
+.food-data,
+.hotel-data{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.list{
+  display: flex;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  margin: 1vw;
+  position: relative;
+  padding-top: 1vw;
+}
+
+.more ul li ul{
+  display: none;
+  position: absolute;
+  left: 0;
+  
+}
+.more ul li:hover ul{
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+
+.more-list{
+  display: none;
+  
+}
+
+.img{
+  width: 30vw;
+  height: 30vh;
+}
+
+
+.info-grid{
+  width: 15vw;
+  word-break: break-all;
+}
+
+.info-field li {
+ 
+  padding: 1vw;
+}
+
+
+
+
