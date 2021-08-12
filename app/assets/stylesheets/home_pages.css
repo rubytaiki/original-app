@@ -1,0 +1,100 @@
+/* 食べる pages */
+
+.eatlogo{
+  writing-mode: vertical-rl;
+    font-size: 54px;
+    background-color: white;
+    padding: 1%;
+    border: 9px solid rgb(155,228,241);
+    position: absolute;
+    top: 23vh;
+    left: 47vw;
+    z-index: 2;
+    font-family: serif;
+    box-shadow: 20px -19px 6px 1px rgb(41 41 41 / 50%);
+}
+
+.eat-image{
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.image1{
+  width: 50vw;
+  height: 66vh;
+}
+
+.image2{
+  width: 50vw;
+  height: 66vh;
+}
+
+.search{
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.viewer-data{
+  width: 100%;
+}
+
+.vfood-data{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list{
+  display: flex;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  margin: 1vw;
+  position: relative;
+  padding-top: 1vw;
+  
+}
+
+.more ul li ul{
+  display: none;
+  position: absolute;
+  left: 0;
+  
+}
+.more ul li:hover ul{
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+
+.more-list{
+  display: none;
+  
+}
+
+.img{
+  width: 30vw;
+  height: 30vh;
+}
+
+
+.info-grid{
+  width: 15vw;
+  word-break: break-all;
+}
+
+.info-field li {
+ 
+  padding: 1vw;
+}
+
+
+
+/* 泊まる pages */
