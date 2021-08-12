@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'homes#index'
-<<<<<<< Updated upstream
-  resources :homes, only: :index
-=======
   resources :foods,  only: [:new, :create, :edit, :update, :destroy]
   resources :hotels, only: [:new, :create, :edit, :update, :destroy]
   resources :users,  only: :index
@@ -15,5 +12,4 @@ Rails.application.routes.draw do
       get 'stay'
     end
   end
->>>>>>> Stashed changes
 end
