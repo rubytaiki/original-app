@@ -5,8 +5,5 @@ class UsersController < ApplicationController
     @foods = Food.all
     @hotels = Hotel.all
   end
-
   
-
-
 end

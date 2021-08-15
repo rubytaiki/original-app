@@ -1,51 +1,46 @@
-/* 食べる pages */
 
-.eatlogo{
-  writing-mode: vertical-rl;
-    font-size: 54px;
-    background-color: white;
-    padding: 1%;
-    border: 9px solid rgb(155,228,241);
-    position: absolute;
-    top: 23vh;
-    left: 47vw;
-    z-index: 2;
-    font-family: serif;
-    box-shadow: 20px -19px 6px 1px rgb(41 41 41 / 50%);
-}
 
-.eat-image{
-  width: 100%;
+.links{
+  list-style: none;
+  margin-top: 8vh;
+  font-size: 4vw;
   display: flex;
-  position: relative;
-  z-index: 1;
+  justify-content: space-around;
 }
 
-.image1{
-  width: 50vw;
-  height: 66vh;
+.page-right,
+.page-left{
+  background: #ffffff;
+  padding: 6vh;
+  border-radius: 7vw;
 }
 
-.image2{
-  width: 50vw;
-  height: 66vh;
-}
 
-.search{
-  width: 100vw;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
-.viewer-data{
+/* 　　　　　　　　　　　　　　データ一覧　　　　　　　　　　　　　　　　　　　*/
+
+.registared-data{
   width: 100%;
 }
 
-.vfood-data{
+.food-title,
+.hotel-title{
+  background-color: #ffd6dd;
+  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  text-align: center;
+  padding: 3%;
+  font-size: 1.25em;
+  margin: 7vh;
+}
+
+
+.food-data,
+.hotel-data{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .list{
   display: flex;
@@ -54,7 +49,6 @@
   margin: 1vw;
   position: relative;
   padding-top: 1vw;
-  
 }
 
 .more ul li ul{
@@ -97,4 +91,4 @@
 
 
 
-/* 泊まる pages */
+

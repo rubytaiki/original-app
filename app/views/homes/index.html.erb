@@ -4,9 +4,9 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <%# 画面遷移↑ %>
 
-<div id="splash">
+<%# <div id="splash">
   <div id="splash_text">こんな日本がまだここにあった。</div>
-</div>
+</div> %>
 
 <%= render 'shared/header' %>
 <div class="body">
@@ -26,7 +26,23 @@
     </ul>
   </div>
 </div>
-
+<div class="body2">
+  <!-- SnapWidget -->
+  <div class="insta">
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/956234" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+  </div>
+  <div class="letters">
+    <h1>離島ってどんなところ</h1>
+      <p>『何もない。』それが一番に出てくる感想。</p>
+      <p>逆に考えて、僕らの住んでいる所には何があるだろうか。</p>
+      <p>そう言われると、すぐには思いつかない。</p>
+      <p>そんな時は、島に無いものと本土に無いものを考える。</p>
+      <p>そうすると、ぽんぽん出てくるのだが、</p>
+      <p>比較する必要なんかない。</p>
+      <p>そこはありのままでしかない場所だから。</p>
+  </div>
+</div>
 <%= render 'shared/footer' %>
 
 <%# 画像自動遷移↓ %>
@@ -44,7 +60,7 @@
 <%# 画像自動遷移↑ %>
 
 <%# ローディング画面 %>
-<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<%# <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 <!--自作のJS-->
 <script>//テキストのカウントアップ+バーの設定
 var bar = new ProgressBar.Line(splash_text, {//id名を指定
@@ -75,7 +91,7 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 //アニメーションスタート
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
   $("#splash").delay(800).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
-});  </script>
+});  </script> %>
 <%# ローディング画面 %>
 
 

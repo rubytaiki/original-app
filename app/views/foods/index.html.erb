@@ -1,0 +1,52 @@
+
+
+<%= render 'shared/header' %>
+
+<div class="vcontents-row">
+  <p class="eatlogo">島を食べる</p>
+  <p class="eat-image">
+    <span><%= image_tag 'eat_image.jpeg', class: "image1" %></span>
+    <span><%= image_tag 'eat_image2.jpeg', class: "image2" %></span>
+  </p>
+  <div class="search">
+    <div class="search-inner">
+      <%= search_form_for @q, url: search_foods_path do |f| %>
+        <%= f.label :island_id_eq, 'エリア' %>
+        <%= f.collection_select :island_id_eq, Island.all, :id, :name,  include_blank: '指定なし' %>
+        <%= f.label :genre_id_eq, 'ジャンル' %>
+        <%= f.collection_select :genre_id_eq, Genre.all, :id, :name,  include_blank: '指定なし' %>
+        <%= f.label :opening_hour_id_eq, '営業時間' %>
+        <%= f.collection_select :opening_hour_id_eq, OpeningHour.all, :id, :name,  include_blank: '指定なし' %>
+        <br>
+        <%= f.submit '検索' %>
+      <% end %>
+    </div>
+  </div>
+  <div class="v-data">
+    <ul class="vfood-data">
+      <% @foods.each do |food| %>
+        <li class='vlist'>
+          <div class="vphoto-grid">
+            <p><%= image_tag food.image, class: "vimg" %><p>
+            <ul>
+              <li><%= "島: #{food.island.name}" %></li>
+              <li><%= "ジャンル: #{food.genre.name}" %></li>
+              <li><%= "営業時間: #{food.opening_hour.name}" %></li>
+            </ul>
+          </div>
+          <div class="vinfo-grid">
+            <ul class="vinfo-field">
+              <li><b><%= food.store_name %></b></li>
+              <li><%= food.address %></li>
+              <li><%= food.tagline %></li>
+              <li><%= food.details %></li>
+              <li><%= food.google_url %></li>
+            </ul>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>

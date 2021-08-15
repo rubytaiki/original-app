@@ -1,13 +1,7 @@
-
-
-
-
-
-
 .contents-row{
   width: 100vw;
   background-image: url(https://image.shutterstock.com/z/stock-vector-color-splash-abstract-cartoon-background-or-children-playground-banner-design-element-vector-718709662.jpg);
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255,255,255,0.6);
   background-blend-mode:lighten;
   background-attachment: fixed;
   background-position: center;
@@ -30,14 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgb(155,228,241);
+  border-bottom: 3px solid rgb(155,228,241);
 }
 
 .title p{
   font-size: 40px;
   font-family: inherit;
   letter-spacing: 0.1em;
-  padding: 5% 0px;
+  padding: 4% 0px;
+  font-weight: 600;
 }
 
 
