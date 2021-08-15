@@ -26,7 +26,7 @@
 .food-title,
 .hotel-title{
   background-color: #ffd6dd;
-  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   text-align: center;
   padding: 3%;
   font-size: 1.25em;
@@ -45,7 +45,7 @@
 .list{
   display: flex;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.5);
   margin: 1vw;
   position: relative;
   padding-top: 1vw;
