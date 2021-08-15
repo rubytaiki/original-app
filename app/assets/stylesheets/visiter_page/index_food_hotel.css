@@ -1,0 +1,115 @@
+/* 食べる 泊まる pages */
+.vcontents-row{
+  width: 100vw;
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eatlogo{
+  writing-mode: vertical-rl;
+  font-size: 54px;
+  background-color: white;
+  padding: 1%;
+  border: 9px solid rgb(155,228,241);
+  position: absolute;
+  top: 23vh;
+  left: 47vw;
+  z-index: 2;
+  font-family: serif;
+  box-shadow: 20px -19px 6px 1px rgb(41 41 41 / 50%);
+}
+
+
+.eat-image{
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.image1{
+  width: 50vw;
+  height: 66vh;
+}
+
+.image2{
+  width: 50vw;
+  height: 66vh;
+}
+
+.search{
+  width: 100vw;
+  height: 17vh;
+  margin-top: -1vh;
+  display: flex;
+  background-color: rgb(223, 193, 173);
+  align-items: center;
+
+}
+
+.search-inner{
+  margin: 0 auto;
+}
+
+.search label{
+  font-size: 15px;
+}
+
+
+
+
+
+.v-data{
+  width: 100%;
+}
+
+.vfood-data{
+  width: 100%;
+}
+
+.vlist{
+  width: 78%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  margin: 4vw auto;
+  position: relative;
+  padding: 1vw 0vw 1vw 0;
+}
+
+.photo-grid ul{
+  margin-top: 1vh;
+}
+
+.photo-grid ul li{
+  margin-bottom: 1vh;
+}
+
+.vimg{
+  width: 30vw;
+  height: 30vh;
+}
+
+
+.vinfo-grid{
+  word-break: break-all;
+}
+.vinfo-grid li b{
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 2vh;
+  /* border-bottom: 2px solid black; */
+}
+
+
+.vinfo-field li {
+  padding: 1.5vw;
+  border-bottom: 1px solid rgb(225,225,225);
+}
+
+/* 泊まる pages */
