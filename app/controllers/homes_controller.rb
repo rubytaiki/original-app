@@ -10,5 +10,8 @@ class HomesController < ApplicationController
   def iki
   end
 
+  def access
+  end
+  
   
 end
