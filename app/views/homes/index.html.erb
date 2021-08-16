@@ -1,9 +1,3 @@
-
-<%# 画面遷移↓ %>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<%# 画面遷移↑ %>
-
 <%# <div id="splash">
   <div id="splash_text">こんな日本がまだここにあった。</div>
 </div> %>
@@ -26,7 +20,7 @@
     </ul>
   </div>
 </div>
-<div class="body2">
+<%# <div class="body2">
   <!-- SnapWidget -->
   <div class="insta">
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -34,29 +28,19 @@
   </div>
   <div class="letters">
     <h1>離島ってどんなところ</h1>
-      <p>『何もない。』それが一番に出てくる感想。</p>
-      <p>逆に考えて、僕らの住んでいる所には何があるだろうか。</p>
-      <p>そう言われると、すぐには思いつかない。</p>
-      <p>そんな時は、島に無いものと本土に無いものを考える。</p>
-      <p>そうすると、ぽんぽん出てくるのだが、</p>
-      <p>比較する必要なんかない。</p>
-      <p>そこはありのままでしかない場所だから。</p>
+    <p>『何もない。』</p>
+    <p>それが一番に出てくる感想。</p>
+    <p>逆に考えて、僕らの住んでいる所には何があるだろうか。</p>
+    <p>そんな時は、島に無いものと本土に無いものを考える。</p>
+    <p>そうすると、ぽんぽん出てくるのだが、</p>
+    <p>比較する必要なんかない。</p>
+    <p>そこはありのままでしかない場所だから。</p>
   </div>
-</div>
+</div> %>
 <%= render 'shared/footer' %>
 
 <%# 画像自動遷移↓ %>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-    $('.slider').slick({
-      autoplay: true,
-      autoplaySpeed: 3500,
-      infinite: true,
-      adaptiveHeight: true
-    });
-  });
-  </script>
 <%# 画像自動遷移↑ %>
 
 <%# ローディング画面 %>

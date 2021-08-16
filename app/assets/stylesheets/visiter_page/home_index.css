@@ -191,8 +191,20 @@ color: #fff;
 }
 
 .letters{
+  height: 52vh;
   writing-mode: vertical-rl;
-  font-size: 30px;
+  font-size: 32px;
+  /* background-color: cadetblue; */
+  width: 50%;
+  padding: 1vh;
+}
+
+.letters h1{
+  font-size: 40px;
+}
+
+.letters p{
+  padding: 0 1vw;
 }
 
 

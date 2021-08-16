@@ -51,6 +51,11 @@
   padding-top: 1vw;
 }
 
+.more span{
+  background-color: #202123;
+  
+}
+
 .more ul li ul{
   display: none;
   position: absolute;
@@ -74,7 +79,7 @@
 }
 
 .img{
-  width: 30vw;
+  width: 31vw;
   height: 30vh;
 }
 

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     collection do
       get 'tushima'
       get 'iki'
+      get 'access'
     end
   end
   resources :foods,  only: [:new, :create, :edit, :update, :destroy, :index] do
