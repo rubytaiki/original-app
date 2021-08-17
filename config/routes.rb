@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'homes#index'
   resources :users,  only: :index
+  resources :orders, only: [:index, :new, :create]
   resources :homes,  only: :index do
     collection do
       get 'tushima'
@@ -20,3 +21,4 @@ Rails.application.routes.draw do
     end
   end
 end
+
