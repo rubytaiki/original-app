@@ -1,4 +1,6 @@
 class Order < ApplicationRecord
+  attr_accessor :token
+  
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :item
   belongs_to :prefecture
@@ -18,6 +20,7 @@ class Order < ApplicationRecord
 
   
   with_options presence: true do
+    validates :token
     validates :postal_code
     validates :city_word
     validates :house_number
