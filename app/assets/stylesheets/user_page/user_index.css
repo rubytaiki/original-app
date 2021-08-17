@@ -15,8 +15,6 @@
   border-radius: 7vw;
 }
 
-
-
 /* 　　　　　　　　　　　　　　データ一覧　　　　　　　　　　　　　　　　　　　*/
 
 .registared-data{
@@ -81,6 +79,7 @@
 .img{
   width: 31vw;
   height: 30vh;
+  padding: 4px;
 }
 
 
