@@ -56,7 +56,19 @@
 }
 
 .search label{
-  font-size: 15px;
+  font-size: 19px;
+}
+
+.search-inner form{
+  font-size: 20px;
+  position: relative;
+}
+
+.search-inner input{
+  position: absolute;
+  top: 5vh;
+  left: 30vh;
+  width: 11vw;
 }
 
 

@@ -1,0 +1,29 @@
+<%= render 'shared/header' %>
+
+<div class="hotel-title">ふるさと納税一覧</div>
+<ul class="hotel-data">
+  <% @items.each do |item| %>
+    <li class='lists'>
+      <div class="photo-grid">
+        <p><%= image_tag item.image , class: "img" %><p>
+        <ul>
+          <li><%= "エリア: #{item.island}" %></li>
+          <li><%= "価格: #{item.price}" %></li>
+        </ul>
+      </div>
+      <div class="info-grid">
+        <ul class="info-field">
+          <li><%= item.name %></li>
+          <li><%= item.tagline %></li>
+        </ul>
+      </div>
+    </li>
+  <% end %>
+</ul>
+<div class="formm">
+  <%= link_to  new_order_path do %>
+  <div class="form-purches">購入フォームはこちら</div>
+  <% end %>
+</div>
+
+<%= render 'shared/footer' %>

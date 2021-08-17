@@ -17,7 +17,7 @@
       <li><%= link_to "対馬を知る", tushima_homes_path %></li>
       <li><%= link_to "壱岐を知る", iki_homes_path %></li>
       <li><%= link_to "アクセス", access_homes_path %></li>
-      <li><a href="#">others</a></li>
+      <li><%= link_to "ふるさと納税", orders_path %></li>
       <% if user_signed_in? %>
         <li><%= link_to current_user.nickname, users_path, class: "when-login" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "when-login" %></li>

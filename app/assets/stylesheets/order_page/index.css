@@ -1,0 +1,21 @@
+.lists{
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(41,41,41,0.5);
+  margin: 1vw;
+  position: relative;
+  padding-top: 1vw;
+}
+
+.formm{
+  padding: 3vh 0;
+  
+}
+.form-purches{
+  background-color: yellowgreen;
+  color: white;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1vh;
+}
