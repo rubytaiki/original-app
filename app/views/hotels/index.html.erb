@@ -10,11 +10,11 @@
     <div class="search-inner">
       <%= search_form_for @q, url: search_hotels_path do |f| %>
         <%= f.label :island_id_eq, 'エリア' %>
-        <%= f.collection_select :island_id_eq, Island.all, :id, :name,  include_blank: '指定なし' %>
+        <%= f.collection_select :island_id_eq, Island.where.not(id: 1), :id, :name,  include_blank: '指定なし' %>
         <%= f.label :location_id_eq, '所在地' %>
-        <%= f.collection_select :location_id_eq, Location.all, :id, :name,  include_blank: '指定なし' %>
+        <%= f.collection_select :location_id_eq, Location.where.not(id: 1), :id, :name,  include_blank: '指定なし' %>
         <%= f.label :price_range_id_eq, '価格帯' %>
-        <%= f.collection_select :price_range_id_eq, PriceRange.all, :id, :name,  include_blank: '指定なし' %>
+        <%= f.collection_select :price_range_id_eq, PriceRange.where.not(id: 1), :id, :name,  include_blank: '指定なし' %>
         <br>
         <%= f.submit '検索' %>
       <% end %>

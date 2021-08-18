@@ -15,8 +15,6 @@
   border-radius: 7vw;
 }
 
-
-
 /* 　　　　　　　　　　　　　　データ一覧　　　　　　　　　　　　　　　　　　　*/
 
 .registared-data{
@@ -26,7 +24,7 @@
 .food-title,
 .hotel-title{
   background-color: #ffd6dd;
-  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
   text-align: center;
   padding: 3%;
   font-size: 1.25em;
@@ -44,11 +42,16 @@
 
 .list{
   display: flex;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(41,41,41,0.5);
   margin: 1vw;
   position: relative;
   padding-top: 1vw;
+}
+
+.more span{
+  background-color: #202123;
+  
 }
 
 .more ul li ul{
@@ -63,7 +66,7 @@
   position: absolute;
   background-color: #fff;
   border: 1px solid #ddd;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   border-radius: 3px;
 }
 
@@ -74,8 +77,9 @@
 }
 
 .img{
-  width: 30vw;
+  width: 31vw;
   height: 30vh;
+  padding: 4px;
 }
 
 

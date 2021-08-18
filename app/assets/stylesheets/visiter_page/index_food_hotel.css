@@ -21,7 +21,7 @@
   left: 47vw;
   z-index: 2;
   font-family: serif;
-  box-shadow: 20px -19px 6px 1px rgb(41 41 41 / 50%);
+  box-shadow: 20px -19px 6px 1px rgba(41,41,41,0.5);
 }
 
 
@@ -47,7 +47,7 @@
   height: 17vh;
   margin-top: -1vh;
   display: flex;
-  background-color: rgb(223, 193, 173);
+  background-color: rgb(223,193,173);
   align-items: center;
 
 }
@@ -57,7 +57,19 @@
 }
 
 .search label{
-  font-size: 15px;
+  font-size: 19px;
+}
+
+.search-inner form{
+  font-size: 20px;
+  position: relative;
+}
+
+.search-inner input{
+  position: absolute;
+  top: 5vh;
+  left: 30vh;
+  width: 11vw;
 }
 
 
@@ -91,16 +103,13 @@
   width: 78%;
   display: flex;
   justify-content: space-around;
-<<<<<<< Updated upstream
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgb(41 41 41 / 50%);
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(41,41,41,0.5);
   margin: 4vw auto;
-=======
   background: rgba(255,255,255,0.9);
   box-shadow: 0 0 10px rgba(41,41,41,0.5);
   margin: 3vw auto;
   margin-bottom: 0;
->>>>>>> Stashed changes
   position: relative;
   padding: 1vw 0vw 1vw 0;
 }
