@@ -1,29 +1,32 @@
 <%= render 'shared/header' %>
-
-<div class="hotel-title">ふるさと納税一覧</div>
-<ul class="hotel-data">
-  <% @items.each do |item| %>
-    <li class='lists'>
-      <div class="photo-grid">
-        <p><%= image_tag item.image , class: "img" %><p>
-        <ul>
-          <li><%= "エリア: #{item.island}" %></li>
-          <li><%= "価格: #{item.price}" %></li>
-        </ul>
-      </div>
-      <div class="info-grid">
-        <ul class="info-field">
-          <li><%= item.name %></li>
-          <li><%= item.tagline %></li>
-        </ul>
-      </div>
-    </li>
-  <% end %>
-</ul>
-<div class="formm">
-  <%= link_to  new_order_path do %>
-  <div class="form-purches">購入フォームはこちら</div>
-  <% end %>
+<div class="vcontents-row">
+  <div class="furusato-contents">
+    <div class="hotel-title">ふるさと納税一覧</div>
+  </div>
+  <ul class="hotel-data">
+    <% @items.each do |item| %>
+      <li class='lists'>
+        <div class="photo-grid-order">
+          <p><%= image_tag item.image , class: "img" %><p>
+          <ul>
+            <li><strong class="strong">エリア:</strong><%=item.island%></li>
+            <li><strong class="strong">価格:</strong><%=item.price%></li>
+          </ul>
+        </div>
+        <div class="info-grid_order">
+          <ul class="info-field">
+            <li><strong class="strong">商品名:</strong><%=item.name%></li>
+            <li><strong class="strong">詳細:</strong><%=item.tagline%></li>
+          </ul>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+  <div class="formm">
+    <%= link_to  new_order_path do %>
+    <div class="form-purches">購入フォームはこちら</div>
+    <% end %>
+  </div>
 </div>
 
 <%= render 'shared/footer' %>
