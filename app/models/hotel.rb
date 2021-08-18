@@ -1,5 +1,6 @@
 class Hotel < ApplicationRecord
   has_one_attached :image
+  belongs_to :user
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :island
