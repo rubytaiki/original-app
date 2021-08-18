@@ -23,6 +23,11 @@
     </div>
   </div>
   <div class="v-data">
+    <% if @foods == nil %>
+      <div class="results-zero">情報が更新されますのをお待ちください</div>
+    <% else %>
+      <div class="results-num"><%=@foods.count%>件ヒットしました</div>
+    <% end %>
     <ul class="vfood-data">
       <% @foods.each do |food| %>
         <li class='vlist'>

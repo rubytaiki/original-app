@@ -21,6 +21,7 @@
     </div>
   </div>
   <div class="v-data">
+    <div class="results-num"><%=@results.count%>件ヒットしました</div>
     <ul class="vfood-data">
       <% @results.each do |hotel| %>
       <li class='vlist'>
@@ -46,3 +47,5 @@
     </ul>
   </div>
 </div>
+
+<%= render 'shared/footer' %>
