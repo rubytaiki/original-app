@@ -30,7 +30,7 @@
       <% @hotels.each do |hotel| %>
         <li class='vlist'>
           <div class="vphoto-grid">
-            <p><%= image_tag assets_path(hotel.image), class: "vimg" %><p>
+            <p><%= image_tag hotel.image, class: "vimg" %><p>
             <ul>
               <li><%= "エリア: #{hotel.island.name}" %></li>
               <li><%= "所在地: #{hotel.location.name}" %></li>
