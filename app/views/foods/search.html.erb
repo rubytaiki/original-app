@@ -3,8 +3,8 @@
 <div class="vcontents-row">
   <p class="eatlogo">島を食べる</p>
   <p class="eat-image">
-    <span><%= image_tag 'eat_image.jpeg', class: "image1" %></span>
-    <span><%= image_tag 'eat_image2.jpeg', class: "image2" %></span>
+    <span><%= image_tag assets_path('eat_image.jpeg', class: "image1") %></span>
+    <span><%= image_tag assets_path('eat_image2.jpeg', class: "image2") %></span>
   </p>
   <div class="search">
     <div class="search-inner">
@@ -26,7 +26,7 @@
       <% @results.each do |food| %>
       <li class='vlist'>
         <div class="photo-grid">
-            <p><%= image_tag food.image, class: "vimg" %><p>
+            <p><%= image_tag assets_path(food.image, class: "vimg" %><p>
             <ul>
               <li><%= "島: #{food.island.name}" %></li>
               <li><%= "ジャンル: #{food.genre.name}" %></li>
