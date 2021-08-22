@@ -1,174 +1,161 @@
+<%# applicationのヘッダーフッターを読み込ませたくない為の記述 %>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<%= javascript_pack_tag 'application' %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+<%# applicationのヘッダーフッターを読み込ませたくない為の記述 %>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 <%# <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/css/6-2-2.css"> %>
-
+<div class="top-image-tushima">
+  <%= image_tag 'iki-tushima.jpeg' %>
+  <span>對馬</span>
+</div>
 <div class="wrapper">
-  <h1>Gallery</h1>
-  <p>画像一覧の列調整と並び替えで使用したライブラリ：<a href="https://haltu.github.io/muuri/" target="_blank">https://haltu.github.io/muuri/</a></p>  
-  <p>画像拡大に使用したライブラリ：<a href="http://fancyapps.com/fancybox/3/" target="_blank">http://fancyapps.com/fancybox/3/</a><br>※商用利用の場合fancyboxは有料になります。公式サイトを参照してください。</p>
-
-      <ul class="sort-btn">
-        <li class="sort00 active">全て</li>
-        <li class="sort01">歴史</li>
-        <li class="sort02">景色</li>
-        <li class="sort03">温泉</li>
-        <li class="sort04">グループ4</li>
-        <li class="sort05">グループ5</li>
-     </ul>
+    <div class="upper-toppage">
+      <%= link_to 'トップに戻る', root_path %>
+    </div>
+    <ul class="sort-btn">
+      <li class="sort00 active">全て</li>
+      <li class="sort01">歴史</li>
+      <li class="sort02">景色</li>
+      <li class="sort03">温泉 宿</li>
+      <li class="sort04">料理</li>
+    </ul>
   
   <ul class="grid">
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://www.ikikankou.com/storage/tourism_attractions/10093/responsive_images/i7UO58utk5mc6t85TqLEgSbUqeHIQwcsDv4C8252__1673_1115.jpeg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://www.ikikankou.com/storage/tourism_attractions/10093/responsive_images/i7UO58utk5mc6t85TqLEgSbUqeHIQwcsDv4C8252__1673_1115.jpeg" alt=""></a>
-    <a href="https://www.ikikankou.com/spot/10093"></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLXcmlu2j1DD8CdC9QGYprSyMxBGMGKSPPi_qZn7UJfRMvWhnviqSvGV0_encvZLKZRwRQ7eShXagClQwL93bEu1zauj9w=w1196-h898-no?authuser=0" data-fancybox="group4" data-caption="対馬の絶品黄金あなご">
+          <img src="https://lh3.google.com/pw/AM-JKLXcmlu2j1DD8CdC9QGYprSyMxBGMGKSPPi_qZn7UJfRMvWhnviqSvGV0_encvZLKZRwRQ7eShXagClQwL93bEu1zauj9w=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/02.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/02.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLXqram2wsWbK2PFaKMUBjOtlEulGv5SckngTDn1x3y_0i80ao1Ir-OLGWcWnnT66Gn8Dcj6XUC0YnnpA3Hg0rOQBrjzjQ=w1146-h1528-no?authuser=0" data-fancybox="group2" data-caption="">
+          <img src="https://lh3.google.com/pw/AM-JKLXqram2wsWbK2PFaKMUBjOtlEulGv5SckngTDn1x3y_0i80ao1Ir-OLGWcWnnT66Gn8Dcj6XUC0YnnpA3Hg0rOQBrjzjQ=w1146-h1528-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/03.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/03.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/04.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/04.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/05.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/05.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/06.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/06.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/07.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/07.jpg" alt=""></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLW8VVkNZxu0xHQYtQPBXx8RayGp_a_YZVYG-V7NWo8135Q0DnA_2QoQIOM71DQXhICYr2PDUhVbStZp64y_UDcpjpAM2Q=w1196-h898-no?authuser=0" data-fancybox="group4" data-caption="対馬のジビエ料理（鹿猪）臭みの具合は血をいかに素早く抜くからしい、、">
+          <img src="https://lh3.google.com/pw/AM-JKLW8VVkNZxu0xHQYtQPBXx8RayGp_a_YZVYG-V7NWo8135Q0DnA_2QoQIOM71DQXhICYr2PDUhVbStZp64y_UDcpjpAM2Q=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/08.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/08.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/09.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/09.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLXDCld2AE3NAIpm6yO4XF424jJi4Tgeg6qGQUIuxvfl0uLyYa78_YMGkxp22LW3oXHFBuFn2tej3A3EAKpHcLvod8NjCw=w1196-h898-no?authuser=0" data-fancybox="group2" data-caption="漁火　光に寄って来た烏賊を捉える　温暖化の影響か、近年不漁らしい">
+          <img src="https://lh3.google.com/pw/AM-JKLXDCld2AE3NAIpm6yO4XF424jJi4Tgeg6qGQUIuxvfl0uLyYa78_YMGkxp22LW3oXHFBuFn2tej3A3EAKpHcLvod8NjCw=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/10.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/10.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLUGSoOy7nH89ogwhGveYsTPWyn_lvP5SsQF-BjU7Gf99cHwVlaTUOEfkXW7eOLd44YPH4IZscyiVFk99ReQ0HFiB-of4Q=w1196-h898-no?authuser=0" data-fancybox="group1" data-caption="和多都美神社の鳥居">
+          <img src="https://lh3.google.com/pw/AM-JKLUGSoOy7nH89ogwhGveYsTPWyn_lvP5SsQF-BjU7Gf99cHwVlaTUOEfkXW7eOLd44YPH4IZscyiVFk99ReQ0HFiB-of4Q=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/11.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/11.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLUqGy2uPKGfql88bjDD3HFA86JvxSmPRu4P79ka75Mdp2Ca9ckskiwvAnsMPLyqOgULE0KVy1gUGUvILbSC4ErLjrM_ZA=w1196-h898-no?authuser=0" data-fancybox="group2" data-caption="烏帽子岳からの展望">
+          <img src="https://lh3.google.com/pw/AM-JKLUqGy2uPKGfql88bjDD3HFA86JvxSmPRu4P79ka75Mdp2Ca9ckskiwvAnsMPLyqOgULE0KVy1gUGUvILbSC4ErLjrM_ZA=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLU9C0XttCGQhpkMSjJ1Vn9mWgx5N-eqyt0Rt0P8hr7HS2cmdvAPVLiNblrjZ82OEN9fbqXhhCDi-AIyYUhVWlRPfbSlyg=w1196-h898-no?authuser=0" data-fancybox="group4" data-caption="店主こだわりぬいた穴子の唐揚げ、藻塩で頂く">
+          <img src="https://lh3.google.com/pw/AM-JKLU9C0XttCGQhpkMSjJ1Vn9mWgx5N-eqyt0Rt0P8hr7HS2cmdvAPVLiNblrjZ82OEN9fbqXhhCDi-AIyYUhVWlRPfbSlyg=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/12.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/12.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLU90iSLu6hyfLFRaPKwrkeClHOKUoBsBgyoFZcXwHP9MZIIHwrs_0RCgguzN5xT7IuLg-f6mhovjp6eC6jFkaGoYdAu0Q=w1196-h898-no?authuser=0" data-fancybox="group3" data-caption="リゾートタイプの東横INN対馬比田勝、隣に温泉施設、海水浴場もある">
+          <img src="https://lh3.google.com/pw/AM-JKLU90iSLu6hyfLFRaPKwrkeClHOKUoBsBgyoFZcXwHP9MZIIHwrs_0RCgguzN5xT7IuLg-f6mhovjp6eC6jFkaGoYdAu0Q=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="item sort02">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLX84uJRcgDtVLdc5h4fezDmo4MThL8WHhxQErS24IoDfwjZPIjuhD3APxnVdAcfE-4wthn4B8GxIetU_gVQ1hORaGICdg=s1196-no?authuser=0" data-fancybox="group2" data-caption="小田浜　元寇の際、一番最初に戦が始まった場所">
+          <img src="https://lh3.google.com/pw/AM-JKLX84uJRcgDtVLdc5h4fezDmo4MThL8WHhxQErS24IoDfwjZPIjuhD3APxnVdAcfE-4wthn4B8GxIetU_gVQ1hORaGICdg=s1196-no?authuser=0" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="item sort02">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLVFeaU1su_WsyJoOCoa6DoXV2MoDBPtR9_P0MBDaV1ySJX4WcTxf8z5rmpFTrjBOqLw6XgVFMwyCp1xv5llqMskpFy8XA=w1196-h898-no?authuser=0" data-fancybox="group2" data-caption="万松院　対馬宗氏歴代の墓　圧倒的な重厚で佇んだ空気感が漂う">
+          <img src="https://lh3.google.com/pw/AM-JKLVFeaU1su_WsyJoOCoa6DoXV2MoDBPtR9_P0MBDaV1ySJX4WcTxf8z5rmpFTrjBOqLw6XgVFMwyCp1xv5llqMskpFy8XA=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="item sort02">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLWWmtE6j8zjaRvUxn5Hk12ky1OHcmWGY7NPDc4dUAWWQRucfq1w0cGDxzCFMI-Et1q2ZXVkIi3wGTCFVR8uDwQjdF9Qhg=w1196-h898-no?authuser=0" data-fancybox="group2" data-caption="万松院　対馬宗氏歴代の墓　圧倒的な重厚で佇んだ空気感が漂う">
+          <img src="https://lh3.google.com/pw/AM-JKLWWmtE6j8zjaRvUxn5Hk12ky1OHcmWGY7NPDc4dUAWWQRucfq1w0cGDxzCFMI-Et1q2ZXVkIi3wGTCFVR8uDwQjdF9Qhg=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/13.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/13.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLXjfIfqITsPK4tHovFTmiIdQos8xcDHyzIKiz38exSs2UAXpwJZXGWq2dxIpYgn2e774MMKPyzsxulTuOtQ9vuuo9iEsA=w1146-h1528-no?authuser=0" data-fancybox="group1" data-caption="多久頭魂神社　閉ざされた謎の地域豆酘の神社　異様な空気が佇む">
+          <img src="https://lh3.google.com/pw/AM-JKLXjfIfqITsPK4tHovFTmiIdQos8xcDHyzIKiz38exSs2UAXpwJZXGWq2dxIpYgn2e774MMKPyzsxulTuOtQ9vuuo9iEsA=w1146-h1528-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/14.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/14.jpg" alt=""></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLWUJgOPD5JTLTp3Nxm4eK3zmuGIfc3kBsN3ZGHbDj9kHdILJpZOaBeK566406SzffdCiEraHO4yawyATpbtjl1H8LaySg=w1196-h898-no?authuser=0" data-fancybox="group4" data-caption="対州そば　対馬の険しく恵の少ない土地でも育った蕎麦　風味がナッツのようで特徴的">
+          <img src="https://lh3.google.com/pw/AM-JKLWUJgOPD5JTLTp3Nxm4eK3zmuGIfc3kBsN3ZGHbDj9kHdILJpZOaBeK566406SzffdCiEraHO4yawyATpbtjl1H8LaySg=w1196-h898-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/15.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/15.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/16.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/16.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/17.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/17.jpg" alt=""></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://static.wixstatic.com/media/7b2f27_aa8e5a0db4d04b7d90e82ddcf71109d4.jpg/v1/fill/w_554,h_744,al_c,q_85,usm_0.66_1.00_0.01/7b2f27_aa8e5a0db4d04b7d90e82ddcf71109d4.webp" data-fancybox="group4" data-caption="日本では数少ない日本ミツバチを年１度しか採密しないことから、高級健康食品として知られる">
+          <img src="https://static.wixstatic.com/media/7b2f27_aa8e5a0db4d04b7d90e82ddcf71109d4.jpg/v1/fill/w_554,h_744,al_c,q_85,usm_0.66_1.00_0.01/7b2f27_aa8e5a0db4d04b7d90e82ddcf71109d4.webp" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/18.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/18.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/19.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/19.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLXioebFGmUd_bGOWLL8bu5TuzVUDXbUG1OdyYHefohmWd6O6lhaIX3hNFvMIv9_axUkEuQS-V96To-5q7i_052iHNI8dw=w1146-h1528-no?authuser=0" data-fancybox="group3" data-caption="真珠の湯　あまり源泉に恵まれてはいない対馬の温泉">
+          <img src="https://lh3.google.com/pw/AM-JKLXioebFGmUd_bGOWLL8bu5TuzVUDXbUG1OdyYHefohmWd6O6lhaIX3hNFvMIv9_axUkEuQS-V96To-5q7i_052iHNI8dw=w1146-h1528-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
     <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/20.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/20.jpg" alt=""></a>
-    </div>
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLVdL0VhMLWUj2HvTr-8xiCGqv-GnDxqTG5Eyb8Ri70SBCTDiW0h7TqU_lCXzOl-KbaoChDWRxPG_R5BSbDYYWuZ4zZGQQ=w1146-h1528-no?authuser=0" data-fancybox="group2" data-caption="厳原町　対馬一の繁華街">
+          <img src="https://lh3.google.com/pw/AM-JKLVdL0VhMLWUj2HvTr-8xiCGqv-GnDxqTG5Eyb8Ri70SBCTDiW0h7TqU_lCXzOl-KbaoChDWRxPG_R5BSbDYYWuZ4zZGQQ=w1146-h1528-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/21.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/21.jpg" alt=""></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.googleusercontent.com/s92-MztGLxPdflQtlPuXm785OLUdRue_FVXEDwyLv4Ig1PLeYaCdqs6YWbD1jJco8LcRMjR3r_7OCsPJH1I4F0RsYmuLNvgAl2y_0UYk4aH8GvYU7GfJtiOdpRKVLpWebs8R9uY0oADAPqPQ0ZHMQcZtNONTuGRpbc39kukx3pqwuUbTblWfJnuTO3o6mCUqa7WvQ8QXUWmADM5UgqxBPj1nXK069b-zJRtSMiTZg7OvWYuNIc6QVaUo-UxN22aG_Ibw4SIk2Lcdn5jbo1gr81eDWCoYopp_7vOfPHv6sxeoYDP2eFda3zSTN7PJ8CGwVKlHTodmKPh19pieHUs1HAKLTcbMeYcVbTEdABmp2V-I8D0xjpMG0v2bzac0Gntmj4v5T-2YGl9ApL7bmqKzBTBg9iyVmuAbvdtKPNSf0J_hIXBUs2Ng3kh8Kdij5kvIa79oWG7HPFWpyINkm_L1_gR0k2qiwMiIvX_coENLbxniEN96ibLtJRztg3hhrMjdt2iddolsP4Oh4bl_6igb-roIsvfdwLRPTTIvMFwaYZlu2B6J0WJ4QBNT-JZFGAZUh50-e-Z1q_1GZNA23VnmbLOBFgKFYIojCyCx0oujvu5oFu7TTfnHoLJgxBYEkKdKJPViBTxbDfrZO1foa9ztzSoQyRhL0bBwNGDX6zpfbgFhOF34ny765XX70U_R3VR42RRdMwdaYolN29gUcj-RW9A=w1870-h1404-no?authuser=0" data-fancybox="group4" data-caption="訪日外国人向けのラーメン屋　1000円の割に全くもってうまくない">
+          <img src="https://lh3.googleusercontent.com/s92-MztGLxPdflQtlPuXm785OLUdRue_FVXEDwyLv4Ig1PLeYaCdqs6YWbD1jJco8LcRMjR3r_7OCsPJH1I4F0RsYmuLNvgAl2y_0UYk4aH8GvYU7GfJtiOdpRKVLpWebs8R9uY0oADAPqPQ0ZHMQcZtNONTuGRpbc39kukx3pqwuUbTblWfJnuTO3o6mCUqa7WvQ8QXUWmADM5UgqxBPj1nXK069b-zJRtSMiTZg7OvWYuNIc6QVaUo-UxN22aG_Ibw4SIk2Lcdn5jbo1gr81eDWCoYopp_7vOfPHv6sxeoYDP2eFda3zSTN7PJ8CGwVKlHTodmKPh19pieHUs1HAKLTcbMeYcVbTEdABmp2V-I8D0xjpMG0v2bzac0Gntmj4v5T-2YGl9ApL7bmqKzBTBg9iyVmuAbvdtKPNSf0J_hIXBUs2Ng3kh8Kdij5kvIa79oWG7HPFWpyINkm_L1_gR0k2qiwMiIvX_coENLbxniEN96ibLtJRztg3hhrMjdt2iddolsP4Oh4bl_6igb-roIsvfdwLRPTTIvMFwaYZlu2B6J0WJ4QBNT-JZFGAZUh50-e-Z1q_1GZNA23VnmbLOBFgKFYIojCyCx0oujvu5oFu7TTfnHoLJgxBYEkKdKJPViBTxbDfrZO1foa9ztzSoQyRhL0bBwNGDX6zpfbgFhOF34ny765XX70U_R3VR42RRdMwdaYolN29gUcj-RW9A=w1870-h1404-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/22.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/22.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/23.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/23.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/24.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/24.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/25.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/25.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/26.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/26.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/27.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/27.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort01">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/28.jpg" data-fancybox="group1" data-caption="グループ1キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/28.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort02">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/29.jpg" data-fancybox="group2" data-caption="グループ2キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/29.jpg" alt=""></a>
-    </div>
-    </li>
-    <li class="item sort03">
-    <div class="item-content">
-    <a href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/30.jpg" data-fancybox="group3" data-caption="グループ3キャプション"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-2/img/30.jpg" alt=""></a>
-    </div>
+    <li class="item sort04">
+      <div class="item-content">
+        <a href="https://lh3.google.com/pw/AM-JKLVFkZR3PdWp_x-LtMkO6vrbwXiD2wtp1sSTGNTippLCgL5ddl4u2YYRxmS5BcOQlkIVY5XVmFc3ba7zPT2AFj448Zpbsw=w2038-h1530-no?authuser=0" data-fancybox="group4" data-caption="訪日外国人向けのラーメン屋　1000円の割に全くもってうまくない">
+          <img src="https://lh3.google.com/pw/AM-JKLVFkZR3PdWp_x-LtMkO6vrbwXiD2wtp1sSTGNTippLCgL5ddl4u2YYRxmS5BcOQlkIVY5XVmFc3ba7zPT2AFj448Zpbsw=w2038-h1530-no?authuser=0" alt="">
+        </a>
+      </div>
     </li>
   </ul>
 <!--/wrapper-->
+<div class="lower-toppage"><%= link_to 'トップに戻る', root_path %></div>
 </div>
 
 <%# <script src="muuri.min.js"></script> %>
