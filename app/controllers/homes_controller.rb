@@ -5,9 +5,11 @@ class HomesController < ApplicationController
   end
   
   def tushima
+    render layout: false
   end
 
   def iki
+    render layout: false
   end
 
   def access

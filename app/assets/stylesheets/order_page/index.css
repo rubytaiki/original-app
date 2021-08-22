@@ -12,6 +12,28 @@
   padding-top: 1vw;
 }
 
+
+
+.photo-grid-order ul li{
+  padding: 1vh;
+  margin-left: 0.4vw;
+}
+
+.photo-grid-order .img{
+  width: 27vw;
+  height: 30vh;
+  padding-left: 29px;
+}
+
+.info-grid_order{
+  width: 31vw;
+  word-break: break-all;
+}
+
+.strong{
+  font-weight: 600;
+}
+
 .formm{
   padding: 3vh 0;
   
@@ -24,18 +46,4 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 1vh;
-}
-
-.photo-grid-order ul li{
-  padding: 1vh;
-  margin-left: 0.4vw;
-}
-
-.info-grid_order{
-  width: 31vw;
-  word-break: break-all;
-}
-
-.strong{
-  font-weight: 600;
 }

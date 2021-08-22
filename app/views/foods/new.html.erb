@@ -1,4 +1,3 @@
-<%= render 'shared/header' %>
 
 <div class="contents-row">
   <div class="container">
@@ -39,7 +38,7 @@
       </div>
       <div class="field">
         <%= f.label :google_url %><br />
-        <%= f.text_area :google_url, placeholder:"GoogleマップからのURL貼り付け" %>
+        <%= f.text_area :google_url, placeholder:"GoogleマップからのURL  空でもOK" %>
       </div>
       <div class="field">
         <%= f.label :details %><br />
@@ -57,5 +56,3 @@
   </div>
 </div>
 <% end %>
-
-<%= render 'shared/footer' %>
