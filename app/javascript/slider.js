@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){              //新しいversionではreadyいらないらしい
   $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 3500,
