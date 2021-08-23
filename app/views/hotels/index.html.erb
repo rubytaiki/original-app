@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="v-data">
-    <% if @hotels == nil %>
+    <% unless @hotels.present? %>
       <div class="results-zero">情報が更新されますのをお待ちください</div>
     <% else %>
       <div class="results-num"><%=@hotels.count%>件ヒットしました</div>
