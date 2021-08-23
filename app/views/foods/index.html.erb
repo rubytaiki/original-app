@@ -31,18 +31,18 @@
           <div class="vphoto-grid">
             <p><%= image_tag food.image, class: "vimg" %><p>
             <ul>
-              <li><%= "島: #{food.island.name}" %></li>
-              <li><%= "ジャンル: #{food.genre.name}" %></li>
-              <li><%= "営業時間: #{food.opening_hour.name}" %></li>
+              <li><strong>島:</strong><%=food.island.name%></li>
+              <li><strong>ジャンル:</strong><%=food.genre.name%></li>
+              <li><strong>営業時間:</strong><%=food.opening_hour.name%></li>
             </ul>
           </div>
           <div class="vinfo-grid">
             <ul class="vinfo-field">
+              <li class="tagline"><%= food.tagline %></li>
               <li><b><%= food.store_name %></b></li>
-              <li><%= food.address %></li>
-              <li><%= food.tagline %></li>
-              <li><%= food.details %></li>
-              <li><%= food.google_url %></li>
+              <li class="row2"><strong>住所:</strong><%= food.address %></li>
+              <li class="row3"><strong>詳細:</strong><%= food.details %></li>
+              <li class="row4"><strong>Google URL:</strong><%= food.google_url %></li>
             </ul>
           </div>
         </li>

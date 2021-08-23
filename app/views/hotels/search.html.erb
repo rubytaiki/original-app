@@ -28,23 +28,23 @@
     <ul class="vfood-data">
       <% @results.each do |hotel| %>
       <li class='vlist'>
-        <div class="photo-grid">
-            <p><%= image_tag hotel.image, class: "vimg" %><p>
-            <ul>
-              <li><%= "エリア: #{hotel.island.name}" %></li>
-              <li><%= "所在地: #{hotel.location.name}" %></li>
-              <li><%= "価格帯: #{hotel.price_range.name}" %></li>
-            </ul>
+        <div class="vphoto-grid">
+          <p><%= image_tag hotel.image, class: "vimg" %><p>
+          <ul>
+            <li><strong>エリア:</strong><%= hotel.island.name%></li>
+            <li><strong>所在地:</strong><%= hotel.location.name%></li>
+            <li><strong>価格帯:</strong><%= hotel.price_range.name%></li>
+          </ul>
         </div>
         <div class="vinfo-grid">
           <ul class="vinfo-field">
+            <li class="tagline"><%= hotel.tagline %></li>
             <li><b><%= hotel.hotel_name %></b></li>
-            <li><%= hotel.address %></li>
-            <li><%= hotel.tagline %></li>
-            <li><%= hotel.details %></li>
-            <li><%= hotel.google_url %></li>
+            <li class="row2"><strong>住所:</strong><%= hotel.address %></li>
+            <li class="row3"><strong>詳細:</strong><%= hotel.details %></li>
+            <li class="row4"><strong>Google URL:</strong><%= hotel.google_url %></li>
           </ul>
-        </div>
+          </div>
       </li>
       <%end%>
     </ul>
