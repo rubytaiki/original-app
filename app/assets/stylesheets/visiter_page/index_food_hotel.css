@@ -143,5 +143,30 @@
   padding: 1.5vw;
   border-bottom: 1px solid rgb(225,225,225);
 }
+.vphoto-grid ul{
+  margin-top: 2vh;
+}
+.vphoto-grid strong{
+  font-weight: 600;
+}
+.vinfo-grid .tagline{
+  color: #e1992e;
+  font-size: 23px;
+  padding: 1.5vh;
+}
+.row2 strong{
+  font-weight: 600;
+  margin-right: 8vw;
+}
+.row3 strong{
+  font-weight: 600;
+  margin-right: 8vw;
+}
+.row4 strong{
+  font-weight: 600;
+  margin-right: 2.3vw;
+}
+
+
 
 /* 泊まる pages */
