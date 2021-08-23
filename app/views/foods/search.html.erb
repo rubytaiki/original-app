@@ -2,8 +2,8 @@
 <div class="vcontents-row">
   <p class="eatlogo">島を食べる</p>
   <p class="eat-image">
-    <span><%= image_tag asset_path('eat_image.jpeg', class: "image1") %></span>
-    <span><%= image_tag asset_path('eat_image2.jpeg', class: "image2") %></span>
+    <span><%= image_tag 'eat_image.jpeg', class: "image1" %></span>
+    <span><%= image_tag 'eat_image2.jpeg', class: "image2" %></span>
   </p>
   <div class="search">
     <div class="search-inner">
@@ -20,7 +20,11 @@
      </div> 
   </div>
   <div class="v-data">
+    <% unless @results.present? %>
+      <div class="results-zero">検索ヒットしませんでした</div>
+    <% else %>
     <div class="results-num"><%=@results.count%>件ヒットしました</div>
+    <% end %>
     <ul class="vfood-data">
       <% @results.each do |food| %>
       <li class='vlist'>

@@ -20,7 +20,11 @@
     </div>
   </div>
   <div class="v-data">
+    <% unless @results.present? %>
+      <div class="results-zero">検索ヒットしませんでした</div>
+    <% else %>
     <div class="results-num"><%=@results.count%>件ヒットしました</div>
+    <% end %>
     <ul class="vfood-data">
       <% @results.each do |hotel| %>
       <li class='vlist'>
