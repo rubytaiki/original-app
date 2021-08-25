@@ -56,7 +56,7 @@ Basic認証   ユーザー名:admin       Password:2222
 
 # 実装画像動画 :movie_camera:
 ## トップページ
-[![Image from Gyazo](https://i.gyazo.com/c8435aacf54794084cef31c988ef46ab.gif)](https://gyazo.com/c8435aacf54794084cef31c988ef46ab)
+[![Image from repo](voyz_public/c8435aacf54794084cef31c988ef46ab.gif)](voyz_public/c8435aacf54794084cef31c988ef46ab.gif)
 #### Point
 ヘッダー部左：アイコンには、ホバーで浮き上がる仕様</br>
 ヘッダー部右：リンクリストは、ホバーで白下線が出てくる使用</br>
@@ -70,9 +70,10 @@ Basic認証   ユーザー名:admin       Password:2222
 管理者によって入力されたデータがこちらに出力されるよう設定</br>
 
 該当する条件にヒットしなかった場合、「検索ヒットしませんでした」の表示↓↓
-[![Image from Gyazo](https://i.gyazo.com/630656685d6771a73ea3b9e25721eaf2.gif)](https://gyazo.com/630656685d6771a73ea3b9e25721eaf2)
+[![Image from repo](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)
+
 ## 対馬を知る　壱岐を知る
-[![Image from Gyazo](https://i.gyazo.com/7ac9383bc87e41733a8c85fafd03626c.gif)](https://gyazo.com/7ac9383bc87e41733a8c85fafd03626c)
+[![Image from repo](voyz_public/7ac9383bc87e41733a8c85fafd03626c.gif)](voyz_public/7ac9383bc87e41733a8c85fafd03626c.gif)
 #### Point
 画面中段：項目をクリックすると、下段の該当する画像のみ表示される</br>
 jQueryプラグイン Muuri</br>
