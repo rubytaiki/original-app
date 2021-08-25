@@ -125,6 +125,7 @@
 .vimg{
   width: 30vw;
   height: 30vh;
+  border-radius: 40px;
 }
 
 
@@ -137,12 +138,15 @@
   padding-bottom: 2vh;
   /* border-bottom: 2px solid black; */
 }
-
-
 .vinfo-field li {
   padding: 1.5vw;
   border-bottom: 1px solid rgb(225,225,225);
 }
+
+.vphoto-grid{
+  margin: 0 1vw;
+}
+
 .vphoto-grid ul{
   margin-top: 2vh;
 }
