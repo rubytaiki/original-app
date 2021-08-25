@@ -1,0 +1,38 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        last_name_kana: 名字
+        first_name_kana: 名前
+        island_id: お住まいの島
+      hotel:
+        image: 画像
+        hotel_name: ホテル名
+        address: アドレス
+        tagline: キャッチコピー
+        details: ホテルの詳細
+        island_id: どちらかの島
+        location_id: 所在地
+        price_range_id: 価格帯
+      food:
+        image: 画像
+        store_name: 飲食店名
+        address: アドレス
+        tagline: キャッチコピー
+        details: ホテルの詳細
+        island_id: どちらかの島
+        genre_id: ジャンル
+        opening_hour_id: 営業時間
+      order:
+        item_id: ふるさと納税 返礼品
+        first_name: 名前
+        last_name: 名字
+        first_name_kana: 名前カナ
+        last_name_kana: 名字カナ
+        token: 正しいクレジットカード情報
+        postal_code: 郵便番号
+        prefecture_id: 都道府県
+        city_word: 市区町村
+        house_number: 番地
+        phone_number: 電話番号
