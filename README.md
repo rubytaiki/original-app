@@ -63,7 +63,7 @@ Basic認証   ユーザー名:admin       Password:2222
 画面中央：jQueryプラグインのslickを使用し、画像のスライド形式で設置</br>
 
 ## 食べる　泊まる
-[![Image from Gyazo](https://i.gyazo.com/bb62923d871d837da07b0ec662320604.gif)](https://gyazo.com/bb62923d871d837da07b0ec662320604)
+[![Image from repo](voyz_public/bb62923d871d837da07b0ec662320604.gif)](voyz_public/bb62923d871d837da07b0ec662320604.gif)
 #### Point
 画面中段：検索機能 ヒット数のカウント表示</br>
 画面下段：飲食店データの表示</br>
@@ -81,7 +81,8 @@ jQueryプラグイン Muuri</br>
 jQueryプラグイン fancybox</br>
 [![Image from Gyazo](https://i.gyazo.com/d108104afdb9de0a52e8a05e742b77cd.jpg)](https://gyazo.com/d108104afdb9de0a52e8a05e742b77cd)
 ## アクセス
-[![Image from Gyazo](https://i.gyazo.com/3e4e054cd947f1be29d7fe0aac3a1b64.gif)](https://gyazo.com/3e4e054cd947f1be29d7fe0aac3a1b64)
+[![Image from repo](voyz_public/3e4e054cd947f1be29d7fe0aac3a1b64.gif)](voyz_public/3e4e054cd947f1be29d7fe0aac3a1b64.gif)
+
 #### Point
 様々なアクセス方法がある中、船での移動にフォーカス。</br>
 画面中段：いくつかある港でも旅行に最適な港を絞ってGoogle Mapで移動時間を紹介</br>
@@ -91,7 +92,7 @@ jQueryプラグイン fancybox</br>
 商品一覧
 [![Image from Gyazo](https://i.gyazo.com/d731751502a2d563c14bfe6a66efa702.jpg)](https://gyazo.com/d731751502a2d563c14bfe6a66efa702)
 購入ページ
-[![Image from Gyazo](https://i.gyazo.com/e1c2ee3afe06e08fedd8a2bf8c49fc53.gif)](https://gyazo.com/e1c2ee3afe06e08fedd8a2bf8c49fc53)
+[![Image from repo](voyz_public/e1c2ee3afe06e08fedd8a2bf8c49fc53.gif)](voyz_public/e1c2ee3afe06e08fedd8a2bf8c49fc53.gif)
 
 #### Point
 商品データはActiveHashを利用して管理</br>
@@ -99,13 +100,13 @@ jQueryプラグイン fancybox</br>
 お金の落ちるチャンネルを観光だけでなく、ふるさと納税という観点も増やしたいと考え実装追加</br>
 
 ## ログインページ　サインインページ
-[![Image from Gyazo](https://i.gyazo.com/88efd3a9348e3f72e38fbc1d4f3ec14b.gif)](https://gyazo.com/88efd3a9348e3f72e38fbc1d4f3ec14b)
+[![Image from repo](voyz_public/88efd3a9348e3f72e38fbc1d4f3ec14b.gif)](voyz_public/88efd3a9348e3f72e38fbc1d4f3ec14b.gif)
 #### Point
 トップページ画面最下部：「Are you a host?」をクリック後ログインページに飛ぶ</br>
 ホストでなければ「To be a host, click here」でユーザー登録</br>
 
 ## 代表者トップページ
-[![Image from Gyazo](https://i.gyazo.com/fed873534bb9f7d449859ba73af216bb.gif)](https://gyazo.com/fed873534bb9f7d449859ba73af216bb)
+[![Image from repo](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)
 #### Point
 トップ画面ヘッダー部右：ログインユーザー専用の項目が増える。自分のニックネームをクリックで投稿管理画面へ</br>
 ・ホテル飲食店の新規登録</br>
