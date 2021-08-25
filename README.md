@@ -71,7 +71,6 @@ Basic認証   ユーザー名:admin       Password:2222
 
 該当する条件にヒットしなかった場合、「検索ヒットしませんでした」の表示↓↓
 [![Image from Gyazo](https://i.gyazo.com/630656685d6771a73ea3b9e25721eaf2.gif)](https://gyazo.com/630656685d6771a73ea3b9e25721eaf2)
-<img srv="https://i.gyazo.com/630656685d6771a73ea3b9e25721eaf2.gif)" width="500px">
 ## 対馬を知る　壱岐を知る
 [![Image from Gyazo](https://i.gyazo.com/7ac9383bc87e41733a8c85fafd03626c.gif)](https://gyazo.com/7ac9383bc87e41733a8c85fafd03626c)
 #### Point
