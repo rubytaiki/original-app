@@ -56,7 +56,7 @@ Basic認証   ユーザー名:admin       Password:2222
 
 # 実装画像動画 :movie_camera:
 ## トップページ
-[![Image from Gyazo](https://i.gyazo.com/c8435aacf54794084cef31c988ef46ab.gif)](https://gyazo.com/c8435aacf54794084cef31c988ef46ab)  
+[![Image from Gyazo](https://i.gyazo.com/c8435aacf54794084cef31c988ef46ab.gif)](https://gyazo.com/c8435aacf54794084cef31c988ef46ab)
 #### Point
 ヘッダー部左：アイコンには、ホバーで浮き上がる仕様</br>
 ヘッダー部右：リンクリストは、ホバーで白下線が出てくる使用</br>
@@ -71,8 +71,7 @@ Basic認証   ユーザー名:admin       Password:2222
 
 該当する条件にヒットしなかった場合、「検索ヒットしませんでした」の表示↓↓
 [![Image from Gyazo](https://i.gyazo.com/630656685d6771a73ea3b9e25721eaf2.gif)](https://gyazo.com/630656685d6771a73ea3b9e25721eaf2)
-
-
+<img srv="https://i.gyazo.com/630656685d6771a73ea3b9e25721eaf2.gif)" width="500px">
 ## 対馬を知る　壱岐を知る
 [![Image from Gyazo](https://i.gyazo.com/7ac9383bc87e41733a8c85fafd03626c.gif)](https://gyazo.com/7ac9383bc87e41733a8c85fafd03626c)
 #### Point
@@ -82,7 +81,6 @@ jQueryプラグイン Muuri</br>
 画像クリック時：画像大画面表示（個人的に撮った写真で、情景の説明書きあり）↓↓</br>
 jQueryプラグイン fancybox</br>
 [![Image from Gyazo](https://i.gyazo.com/d108104afdb9de0a52e8a05e742b77cd.jpg)](https://gyazo.com/d108104afdb9de0a52e8a05e742b77cd)
-
 ## アクセス
 [![Image from Gyazo](https://i.gyazo.com/3e4e054cd947f1be29d7fe0aac3a1b64.gif)](https://gyazo.com/3e4e054cd947f1be29d7fe0aac3a1b64)
 #### Point
