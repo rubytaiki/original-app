@@ -19,6 +19,6 @@ class User < ApplicationRecord
     end
   end
 
-  validates :island_id, numericality: { other_than: 1, message: "can't be blank" }
-       
+  validates :island_id, numericality: { other_than: 1, message: "を入力してください" }
+  validates :password, :password_confirmation, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }, length: { minimum: 6 }
 end

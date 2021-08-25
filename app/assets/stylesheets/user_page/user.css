@@ -15,8 +15,6 @@
   background-color: white;
   margin: 0 auto;
   font-family: "游ゴシック", "YuGothic";
-
-  
 }
 
 .title{
@@ -42,6 +40,16 @@
   align-items: center;
 }
 
+.login-flash-message{
+  text-align: center;
+  color: red;
+  margin-top: 2vh;
+}
+#error_explanation{
+  text-align: center;
+  color: red;
+  margin-top: 2vh;
+}
 .field{
   width: 60%;
   font-size: 1.3em;

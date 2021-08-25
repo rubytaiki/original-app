@@ -2,11 +2,15 @@
 <div class="contents-row">
   <div class="container">
     <div class="title">
-    <p>Are you a host user?</p>
+    <p>ログイン</p>
     </div>
     <div class="form"> 
       <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= render 'devise/shared/error_messages', model: @user %>
+      <div class='login-flash-message'>
+        <%= flash[:notice] %>
+        <%= flash[:alert] %>
+      </div>
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true %>
@@ -17,14 +21,14 @@
       </div>
       <% if devise_mapping.rememberable? %>
       <div class="field">
-        <%= f.label :remember_me_check_here %><br />
+        <%= f.label :次回からデータ入力省略%><br />
         <%= f.check_box :remember_me %>
       </div>
       <% end -%>
       <div class="actions">
-        <input type="submit" name="commit" value="Yes I am" data-disable-with="Log in">
+        <input type="submit" name="commit" value="ログイン" data-disable-with="Log in">
         <div class="registar-user">
-          <%= link_to "To be a host, click here", new_user_registration_path %>
+          <%= link_to "管理者登録はこちらから", new_user_registration_path %>
           <%= link_to "トップページへ戻る", '/' %>
         </div>
       </div>

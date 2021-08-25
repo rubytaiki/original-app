@@ -15,7 +15,7 @@ class Food < ApplicationRecord
     validates :details
   end  
 
-  with_options numericality: { other_than: 1, message: "can't be blank" } do
+  with_options numericality: { other_than: 1, message: "を選択して下さい" } do
     validates :island_id
     validates :genre_id
     validates :opening_hour_id
