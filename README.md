@@ -13,11 +13,11 @@
 http://35.74.120.34/
 
 # テスト用アカウント :credit_card:
-Basic認証   ユーザー名:admin       Password:2222
-管理者      email:koko@gmail.com  Password:111111w
-クレジットカード番号 4242424242424242
-有効期限 現在より未来の日付
-セキュリティコード 123 
+Basic認証   ユーザー名:admin       Password:2222</br>
+管理者      email:koko@gmail.com  Password:111111w</br>
+クレジットカード番号 4242424242424242</br>
+有効期限 現在より未来の日付</br>
+セキュリティコード 123 </br>
 
 # ペルソナ
 ### <閲覧者:woman :man:>
