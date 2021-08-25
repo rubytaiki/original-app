@@ -106,7 +106,7 @@ jQueryプラグイン fancybox</br>
 トップページ画面最下部：「Are you a host?」をクリック後ログインページに飛ぶ</br>
 ホストでなければ「To be a host, click here」でユーザー登録</br>
 
-## 代表者トップページ
+## 管理者トップページ
 [![Image from repo](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)
 #### Point
 トップ画面ヘッダー部右：ログインユーザー専用の項目が増える。自分のニックネームをクリックで投稿管理画面へ</br>
