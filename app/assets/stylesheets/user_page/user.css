@@ -51,16 +51,24 @@
   margin-top: 2vh;
 }
 .field{
-  width: 60%;
+  width: 58%;
   font-size: 1.3em;
   letter-spacing: 0.1em;
   border-radius: 5px;
   margin: 5% auto;
   text-align: center;
 }
+.field textarea{
+  border: 1px solid #ccc;
+  width: 84%;
+}
+.field input{
+  width: 97%;
+}
 
-.button, input{
+#user_email, #user_password{
   width: 35vw;
+  border: 1px solid #ccc;
 }
 
 .actions{
