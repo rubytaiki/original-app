@@ -20,7 +20,7 @@ ja:
         store_name: 飲食店名
         address: アドレス
         tagline: キャッチコピー
-        details: ホテルの詳細
+        details: 飲食店の詳細
         island_id: どちらかの島
         genre_id: ジャンル
         opening_hour_id: 営業時間

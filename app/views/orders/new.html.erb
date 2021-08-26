@@ -5,6 +5,8 @@
     <%= render 'shared/error_messages', model: @order %>
   <%= form_with model: @order, url: orders_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
     <div class='buy-item-info'>
+      <label class="form-text">返礼品</label>
+      <span class="indispensable">必須</span>
       <%= f.collection_select(:item_id, Item.all, :id, :name, {}, {class:"select-box", id:"item"}) %>
     </div>
 
@@ -38,6 +40,7 @@
         </div>
         <%= f.text_field :postal_code, class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
       </div>
+      
       <div class="form-group">
         <div class='form-text-wrap'>
           <label class="form-text">都道府県</label>
