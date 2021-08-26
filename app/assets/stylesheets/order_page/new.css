@@ -25,9 +25,20 @@
   display: flex;
   align-items: center;
   justify-content: center; 
+  position: relative;
 }
 .select-box{
   border: 1px solid #ccc;
+}
+.buy-item-info .indispensable{
+  position: absolute;
+  top: 1vh;
+  left: 19vw;
+}
+.buy-item-info .form-text{
+  position: absolute;
+  top: 1vh;
+  left: 14vw;
 }
 /* /購入商品の選択 */
 
@@ -90,6 +101,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.indispensable{
+  background: #016fce;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 4px;
 }
 
 .input-name {
