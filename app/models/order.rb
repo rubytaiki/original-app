@@ -7,31 +7,24 @@ class Order < ApplicationRecord
 
 
   with_options presence: true do
-    with_options format: { with: /\A[ぁ-んァ-ン一-龥々ー]+\z/ } do
-      validates :first_name
-      validates :last_name
-    end
-    with_options format: { with: /\A[ァ-ヶー－]+\z/ } do
-      validates :first_name_kana
-      validates :last_name_kana
-    end
-  end
-
-
-  
-  with_options presence: true do
-    validates :token
-    validates :postal_code
-    validates :city_word
-    validates :house_number
-    validates :phone_number
+    validates :first_name, :last_name, :first_name_kana, :last_name_kana
   end
   with_options allow_blank: true do
-    validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
+    with_options format: { with: /\A[ぁ-んァ-ン一-龥々ー]+\z/ } do
+      validates :first_name, :last_name
+    end
+    with_options format: { with: /\A[ァ-ヶー－]+\z/ } do
+      validates :first_name_kana, :last_name_kana
+    end
+  end
+  with_options presence: true do
+    validates :token, :postal_code, :city_word, :house_number, :phone_number
+  end
+  with_options allow_blank: true do
+    validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "は不正な値です。ハイフン(-)を入れてください"}
     validates :phone_number, format: {with: /\A\d{10,11}+$\z/ }
   end
-  with_options numericality: {other_than: 1, message: "を選択して下さい"} do
-    validates :prefecture_id
-    validates :item_id
+  with_options numericality: {other_than: 1, message: "を選択してください"} do
+    validates :prefecture_id, :item_id
   end
 end
