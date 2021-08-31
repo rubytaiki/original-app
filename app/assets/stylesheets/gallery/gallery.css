@@ -7,15 +7,33 @@
 }
 
 .top-image-iki span{
+	width: calc(50% - 36vw);
+	height: 43%;
 	writing-mode: vertical-rl;
 	background-color: black;
 	font-family: 'New Tegomin', serif;
-	font-size: 14rem;
+	font-size: 9rem;
 	color: #fed695;
 	position: absolute;
-	top: 6%;
-	left: 11%;
+	top: 19vh;
+	left: 5vw;
+	padding: 1vw;
+	z-index: 2;
+}
+
+.top-image-iki ul{
+	height: 43vh;
+	writing-mode: vertical-rl;
+	background-color: black;
+	font-family: 'New Tegomin', serif;
+	font-size: 1.2rem;
+	line-height: 2;
+	color: #fed695;
+	position: absolute;
+	top: 19vh;
+	left: 18vw;
 	padding: 3vw;
+	z-index: 2;
 }
 
 .top-image-tushima img{
@@ -25,14 +43,31 @@
 }
 
 .top-image-tushima span{
+	width: calc(50% - 36vw);
+	height: 43%;
 	writing-mode: vertical-rl;
 	background-color: black;
 	font-family: 'New Tegomin', serif;
-	font-size: 14rem;
+	font-size: 9rem;
 	color: #fed695;
 	position: absolute;
-	top: 6%;
-	right: 12%;
+	top: 19vh;
+	right: 5vw;
+	padding: 1vw;
+	z-index: 2;
+}
+
+.top-image-tushima ul{
+	height: 43vh;
+	writing-mode: vertical-rl;
+	background-color: black;
+	font-family: 'New Tegomin', serif;
+	font-size: 1.2rem;
+	line-height: 2;
+	color: #fed695;
+	position: absolute;
+	top: 19vh;
+	right: 18vw;
 	padding: 3vw;
 	z-index: 2;
 }
@@ -45,6 +80,8 @@
 	position: absolute;
 	bottom: 0%;
 	right: 1%;
+	font-size: 20px;
+	background-color: #eeeeee;
 }
 
 .sort-btn ul{
@@ -130,7 +167,10 @@ list-style:none;
     border: 4px solid #FA999B;
 }
 .lower-toppage{
-	text-align:end;
-	padding-right: 1vw;
-	padding-bottom: 1vw;
+	text-align: center;
+	font-size: 20px;
+	padding: 2vh;
+}
+.lower-toppage a{
+	background-color: #eeeeee;
 }
