@@ -63,7 +63,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 画面中央：jQueryプラグインのslickを使用し、画像のスライド形式で設置</br>
 
 ## 食べる　泊まる
-[![Image from repo](voyz_public/bb62923d871d837da07b0ec662320604.gif)](voyz_public/bb62923d871d837da07b0ec662320604.gif)
+[![Image from repo](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)
 #### Point
 画面中段：検索機能 ヒット数のカウント表示</br>
 画面下段：飲食店データの表示</br>
@@ -73,7 +73,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 [![Image from repo](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)
 
 ## 対馬を知る　壱岐を知る
-[![Image from repo](voyz_public/7ac9383bc87e41733a8c85fafd03626c.gif)](voyz_public/7ac9383bc87e41733a8c85fafd03626c.gif)
+[![Image from repo](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)
 #### Point
 画面中段：項目をクリックすると、下段の該当する画像のみ表示される</br>
 jQueryプラグイン Muuri</br>
@@ -101,24 +101,29 @@ jQueryプラグイン fancybox</br>
 お金の落ちるチャンネルを観光だけでなく、ふるさと納税という観点も増やしたいと考え実装追加</br>
 
 ## ログインページ　サインインページ
-[![Image from repo](voyz_public/88efd3a9348e3f72e38fbc1d4f3ec14b.gif)](voyz_public/88efd3a9348e3f72e38fbc1d4f3ec14b.gif)
+[![Image from repo](voyz_public/aab45c6322552277c1162230ef96673e.gif)](voyz_public/aab45c6322552277c1162230ef96673e.gif)
 #### Point
 トップページ画面最下部：「Are you a host?」をクリック後ログインページに飛ぶ</br>
 ホストでなければ「To be a host, click here」でユーザー登録</br>
 
 ## 管理者トップページ
-[![Image from repo](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)](voyz_public/fed873534bb9f7d449859ba73af216bb.gif)
+[![Image from repo](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)
 #### Point
 トップ画面ヘッダー部右：ログインユーザー専用の項目が増える。自分のニックネームをクリックで投稿管理画面へ</br>
 ・ホテル飲食店の新規登録</br>
 ・既存ホテル飲食店データの編集削除</br>
 これらのページにそれぞれ飛べる</br>
 
+編集削除ボタン↓
+![Image from repo](app/assets/images/2021-08-30.png)
+
+
 # 使用技術 :art:
 Ruby/RubyonRails/JavaScript/jQuery/MySQL/SequelPro/</br>
-AWS(EC2,S3)//Nginx/Unicorn/Github/Github Desktop/</br>
+AWS(EC2,S3)/Capistrano/Nginx/Unicorn/Github/Github Desktop/</br>
 slick/fancybox/Muuri/</br>
-Capistrano/devise/active_hash/mini_magick/image_processing/ransack/pry-rails/payjp
+devise/active_hash/mini_magick/image_processing/ransack/pry-rails/payjp/rails-i18n</br>
+rubocop/rspec-rails/factory_bot_rails/faker/gimei/</br>
 
 # 課題や今後実装したい機能 :eyes:
 ＜閲覧者面＞</br>
