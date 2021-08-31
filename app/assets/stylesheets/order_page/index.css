@@ -21,7 +21,7 @@
 
 .photo-grid-order .img{
   width: 27vw;
-  height: 30vh;
+  height: auto;
   padding-left: 29px;
 }
 
