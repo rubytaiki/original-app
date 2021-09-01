@@ -10,10 +10,7 @@ class Food < ApplicationRecord
   with_options presence: true do
     validates :image, :store_name, :address, :tagline, :details
   end
-  with_options numericality: { other_than: 1, message: "を選択してください" } do
+  with_options numericality: { other_than: 1, message: 'を選択してください' } do
     validates :island_id, :genre_id, :opening_hour_id
   end
 end
-
-
-  

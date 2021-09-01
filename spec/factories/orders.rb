@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :order do
     transient do
       person { Gimei.unique.name }
-      address {Gimei.address}
+      address { Gimei.address }
     end
     item_id { 2 }
     first_name { person.first.kanji }
@@ -15,6 +15,6 @@ FactoryBot.define do
     house_number { '1-1' }
     building_name { '東京ハイツ' }
     phone_number { '08055556789' }
-    token {"tok_abcdefghijk00000000000000000"}
+    token { 'tok_abcdefghijk00000000000000000' }
   end
 end

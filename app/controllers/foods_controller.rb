@@ -1,6 +1,6 @@
 class FoodsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_action :set_q,  only: [:index, :search]
+  before_action :set_q, only: [:index, :search]
 
   def new
     @food = Food.new
@@ -8,11 +8,11 @@ class FoodsController < ApplicationController
 
   def create
     @food = Food.new(food_params)
-      if @food.save
-        redirect_to controller: :users, action: :index
-      else
-        render :new
-      end
+    if @food.save
+      redirect_to controller: :users, action: :index
+    else
+      render :new
+    end
   end
 
   def edit
@@ -30,7 +30,6 @@ class FoodsController < ApplicationController
     food.destroy
   end
 
-
   def index
     @foods = Food.all
   end
@@ -38,15 +37,15 @@ class FoodsController < ApplicationController
   def search
     @results = @q.result
   end
-  
 
   private
+
   def food_params
-    params.require(:food).permit(:store_name, :address, :tagline, :google_url, :details, :genre_id, :island_id, :opening_hour_id, :image).merge(user_id: current_user.id)
+    params.require(:food).permit(:store_name, :address, :tagline, :google_url, :details, :genre_id, :island_id, :opening_hour_id,
+                                 :image).merge(user_id: current_user.id)
   end
 
   def set_q
     @q = Food.ransack(params[:q])
   end
-
 end

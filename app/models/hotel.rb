@@ -9,8 +9,8 @@ class Hotel < ApplicationRecord
 
   with_options presence: true do
     validates :image, :hotel_name, :address, :tagline, :details
-  end  
-  with_options numericality: { other_than: 1, message: "を選択してください" } do
+  end
+  with_options numericality: { other_than: 1, message: 'を選択してください' } do
     validates :island_id, :location_id, :price_range_id
   end
 end

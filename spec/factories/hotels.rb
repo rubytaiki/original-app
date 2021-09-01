@@ -1,10 +1,10 @@
 FactoryBot.define do
   factory :hotel do
-    hotel_name {'綺麗なお宿'}
-    address {'壱岐市芦辺町'}
-    tagline {'とても綺麗なホテル！'}
-    details {'港まで送迎つき'}
-    google_url {'https://goo.gl/maps/B1DaGnaBH9YrPm419'}
+    hotel_name { '綺麗なお宿' }
+    address { '壱岐市芦辺町' }
+    tagline { 'とても綺麗なホテル！' }
+    details { '港まで送迎つき' }
+    google_url { 'https://goo.gl/maps/B1DaGnaBH9YrPm419' }
     island_id { 3 }
     location_id { 3 }
     price_range_id { 3 }
