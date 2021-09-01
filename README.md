@@ -21,7 +21,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 セキュリティコード 123 </br>
 
 # ペルソナ
-### <管理者　:older_woman: :older_man:>
+### <管理者:older_woman::older_man:>
 ・(住まい) 島の観光局職員</br>
 ・(年齢)  40代〜50代</br>
 ・(持っている課題)
