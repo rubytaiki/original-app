@@ -97,8 +97,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 [![Image from repo](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)
 #### Point
 画面中段：検索機能 ヒット数のカウント表示</br>
-画面下段：飲食店データの表示</br>
-管理者によって入力されたデータがこちらに出力される</br>
+画面下段：飲食店データの表示　←←管理者によって入力されたデータがこちらに出力される</br>
 
 該当する条件にヒットしなかった場合、「検索ヒットしませんでした」の表示↓↓
 [![Image from repo](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)
