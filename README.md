@@ -67,7 +67,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 [![Image from repo](voyz_public/aab45c6322552277c1162230ef96673e.gif)](voyz_public/aab45c6322552277c1162230ef96673e.gif)
 #### Point
 トップページ画面最下部：「管理者はこちら」をクリック後ログインページに飛ぶ</br>
-ホストでなければ「管理者登録はこちら」をクリック後ユーザー登録</br>
+ホストでなければ「管理者登録はこちらから」をクリック後ユーザー登録</br>
 
 ## 管理者トップページ
 [![Image from repo](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)
