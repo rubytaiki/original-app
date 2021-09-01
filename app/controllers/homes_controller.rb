@@ -3,7 +3,7 @@ class HomesController < ApplicationController
 
   def index
   end
-  
+
   def tushima
     render layout: false
   end
@@ -14,6 +14,4 @@ class HomesController < ApplicationController
 
   def access
   end
-  
-  
 end

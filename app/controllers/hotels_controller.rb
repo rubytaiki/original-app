@@ -8,11 +8,11 @@ class HotelsController < ApplicationController
 
   def create
     @hotel = Hotel.new(hotel_params)
-      if @hotel.save
-        redirect_to controller: :users, action: :index
-      else
-        render :new
-      end
+    if @hotel.save
+      redirect_to controller: :users, action: :index
+    else
+      render :new
+    end
   end
 
   def edit
@@ -38,16 +38,14 @@ class HotelsController < ApplicationController
     @results = @q.result
   end
 
-  
-
-
   private
+
   def hotel_params
-    params.require(:hotel).permit(:hotel_name, :address, :tagline, :google_url, :details, :location_id, :island_id, :price_range_id, :image).merge(user_id: current_user.id)
+    params.require(:hotel).permit(:hotel_name, :address, :tagline, :google_url, :details, :location_id, :island_id,
+                                  :price_range_id, :image).merge(user_id: current_user.id)
   end
 
   def set_q
     @q = Hotel.ransack(params[:q])
   end
-
 end

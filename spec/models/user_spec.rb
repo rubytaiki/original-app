@@ -22,39 +22,39 @@ RSpec.describe User, type: :model do
       it 'nickname:必須' do
         @user.nickname = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("ニックネームを入力してください")
+        expect(@user.errors.full_messages).to include('ニックネームを入力してください')
       end
 
       it 'email:必須' do
         @user.email = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Eメールを入力してください")
+        expect(@user.errors.full_messages).to include('Eメールを入力してください')
       end
 
       it 'password:必須' do
         @user.password = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("パスワードを入力してください")
+        expect(@user.errors.full_messages).to include('パスワードを入力してください')
       end
 
       it 'first_name_kana:必須' do
         @user.first_name_kana = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("名前を入力してください")
+        expect(@user.errors.full_messages).to include('名前を入力してください')
       end
 
       it 'last_name_kana:必須' do
         @user.last_name_kana = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("名字を入力してください")
+        expect(@user.errors.full_messages).to include('名字を入力してください')
       end
 
       it 'island_id:必須' do
         @user.island_id = 1
         @user.valid?
-        expect(@user.errors.full_messages).to include("お住まいの島を入力してください")
+        expect(@user.errors.full_messages).to include('お住まいの島を入力してください')
       end
-      
+
       it 'first_name_kanaが全角カタカナでなければ登録できないこと' do
         @user.first_name_kana = 'あいうえお'
         @user.valid?
@@ -99,7 +99,7 @@ RSpec.describe User, type: :model do
         @user.password = '12345'
         @user.password_confirmation = '1234567'
         @user.valid?
-        expect(@user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
+        expect(@user.errors.full_messages).to include('パスワード（確認用）とパスワードの入力が一致しません')
       end
 
       it '＠がないと登録できない' do
@@ -107,10 +107,6 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include('Eメールは不正な値です')
       end
-
-
-      
-
     end
   end
 end

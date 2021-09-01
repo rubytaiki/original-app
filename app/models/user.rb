@@ -6,7 +6,6 @@ class User < ApplicationRecord
 
   has_many :foods
   has_many :hotels
-  
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :island
@@ -22,6 +21,6 @@ class User < ApplicationRecord
       validates :password, :password_confirmation
     end
   end
-  
-  validates :island_id, numericality: { other_than: 1, message: "を入力してください" }
+
+  validates :island_id, numericality: { other_than: 1, message: 'を入力してください' }
 end
