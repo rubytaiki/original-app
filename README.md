@@ -20,6 +20,13 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 セキュリティコード 123 </br>
 
 # ペルソナ
+### <管理者　:older_woman: :older_man:>
+・(住まい)          島の観光局職員</br>
+・(年齢)            40代〜50代</br>
+・(持っている課題)
+距離的な問題か、観光客が少ないかつ、コロナ蔓延でより客足がより少ない</br>
+現地の観光局等職員が高齢で気軽に情報を投稿更新できない（Wordpress初見だと難しい）
+
 ### <閲覧者:woman: :man:>
 ・(住まい)                  九州在住</br>
 ・(年齢)                    30〜50代</br>
@@ -28,19 +35,12 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 ・(離島に対してのイメージ)
 離島への旅行って遠そう 何があるのか分からない
               
-### <管理者　:older_woman: :older_man:>
-・(住まい)          島の観光局職員</br>
-・(年齢)            40代〜50代</br>
-・(持っている課題)
-距離的な問題か、観光客が少ないかつ、コロナ蔓延でより客足がより少ない</br>
-現地の観光局等職員が高齢で気軽に情報を投稿更新できない（Wordpress初見だと難しい）
-
 
 # 目指すもの :checkered_flag:
 以上の２者の課題解決のため、
 
 ・情報管理のしやすさ</br>
-・マイクロツーリズムに則った新しい観光需要の創出
+・マイクロツーリズムに則った新しい離島観光需要の創出</br>
 
 といった観光情報発信Webサイトの作成を目指す。
 
@@ -48,7 +48,7 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 # 工夫した点 :black_nib:
 市公式の観光サイトではない、「離島旅行」という形で推すWebサイトという位置付けにした点。</br>
 閲覧者が出来るだけサイト内に留まってもらえるように、動画や写真の挿入、クリックした時の要素にCSSjQueryで遊びを入れた点。</br>
-離島がどのような場所か想像が出来るよう、島までのアクセスなどの、体験できる内容を写真動画を用いて訴求した点。
+離島がどのような場所か想像が出来るよう、島までのアクセスなどの、体験できる内容を写真動画を用いて訴求した点。</br>
 
 
 # ページ遷移図　
@@ -62,25 +62,56 @@ Basic認証   ユーザー名:admin       Password:2222</br>
 ヘッダー部右：リンクリストは、ホバーで白下線が出てくる使用</br>
 画面中央：jQueryプラグインのslickを使用し、画像のスライド形式で設置</br>
 
+## ログインページ　サインインページ
+[![Image from repo](voyz_public/aab45c6322552277c1162230ef96673e.gif)](voyz_public/aab45c6322552277c1162230ef96673e.gif)
+#### Point
+トップページ画面最下部：「管理者はこちら」をクリック後ログインページに飛ぶ</br>
+ホストでなければ「管理者登録はこちら」をクリック後ユーザー登録</br>
+
+## 管理者トップページ
+[![Image from repo](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)
+#### Point
+トップ画面ヘッダー部右：ログインユーザー専用の項目が増える。自分のニックネームをクリックで管理者トップページへ</br>
+・自身が投稿しているデータ一覧を確認</br>
+・ホテル飲食店の新規登録のページへ</br>
+・既存ホテル飲食店データの編集削除</br>
+
+＜管理者トップページに全ての機能を集約し、文字を大きく、シンプルな設計＞</br>
+
+編集削除ボタン↓
+![Image from repo](app/assets/images/2021-08-30.png)
+
+
+## ホテル飲食店の新規登録
+[![Image from repo](voyz_public/2f736ea485af1f05433b4dd4424f3033.gif)](voyz_public/2f736ea485af1f05433b4dd4424f3033.gif)
+#### Point
+入力のシンプルに
+入力情報は以下の「食べる」「泊まる」ページにて閲覧者が見る事が出来る</br>
+
+エラーが起きた場合の日本語設定↓↓
+[![Image from Gyazo](https://i.gyazo.com/de760dc2718c11ed3c7cc6cb2ca1d528.png)](https://gyazo.com/de760dc2718c11ed3c7cc6cb2ca1d528)
+
+
 ## 食べる　泊まる
 [![Image from repo](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)](voyz_public/f3e805c6cd01567933ab9c244e830e66.gif)
 #### Point
 画面中段：検索機能 ヒット数のカウント表示</br>
 画面下段：飲食店データの表示</br>
-管理者によって入力されたデータがこちらに出力されるよう設定</br>
+管理者によって入力されたデータがこちらに出力される</br>
 
 該当する条件にヒットしなかった場合、「検索ヒットしませんでした」の表示↓↓
-[![Image from repo](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)](voyz_public/630656685d6771a73ea3b9e25721eaf2.gif)
+[![Image from repo](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)
 
 ## 対馬を知る　壱岐を知る
-[![Image from repo](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)](voyz_public/aaff6a015b2bfebb3aea8c4dfa19cdc6.gif)
+[![Image from repo](voyz_public/62d9e5b72f17e46ff5c66fa0bae10258.gif)](voyz_public/62d9e5b72f17e46ff5c66fa0bae10258.gif)
 #### Point
 画面中段：項目をクリックすると、下段の該当する画像のみ表示される</br>
 jQueryプラグイン Muuri</br>
 
-画像クリック時：画像大画面表示（個人的に撮った写真で、情景の説明書きあり）↓↓</br>
+画像クリック時：画像大画面表示（全て個人で撮った写真、情景の説明書きあり）↓↓</br>
 jQueryプラグイン fancybox</br>
 [![Image from Gyazo](https://i.gyazo.com/d108104afdb9de0a52e8a05e742b77cd.jpg)](https://gyazo.com/d108104afdb9de0a52e8a05e742b77cd)
+
 ## アクセス
 [![Image from repo](voyz_public/3e4e054cd947f1be29d7fe0aac3a1b64.gif)](voyz_public/3e4e054cd947f1be29d7fe0aac3a1b64.gif)
 
@@ -99,24 +130,6 @@ jQueryプラグイン fancybox</br>
 商品データはActiveHashを利用して管理</br>
 クレジット機能を用いて購入可能。</br>
 お金の落ちるチャンネルを観光だけでなく、ふるさと納税という観点も増やしたいと考え実装追加</br>
-
-## ログインページ　サインインページ
-[![Image from repo](voyz_public/aab45c6322552277c1162230ef96673e.gif)](voyz_public/aab45c6322552277c1162230ef96673e.gif)
-#### Point
-トップページ画面最下部：「Are you a host?」をクリック後ログインページに飛ぶ</br>
-ホストでなければ「To be a host, click here」でユーザー登録</br>
-
-## 管理者トップページ
-[![Image from repo](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)](voyz_public/f45625c4a0226b08d7ee86fa5f595c8d.gif)
-#### Point
-トップ画面ヘッダー部右：ログインユーザー専用の項目が増える。自分のニックネームをクリックで投稿管理画面へ</br>
-・ホテル飲食店の新規登録</br>
-・既存ホテル飲食店データの編集削除</br>
-これらのページにそれぞれ飛べる</br>
-
-編集削除ボタン↓
-![Image from repo](app/assets/images/2021-08-30.png)
-
 
 # 使用技術 :art:
 Ruby/RubyonRails/JavaScript/jQuery/MySQL/SequelPro/</br>
