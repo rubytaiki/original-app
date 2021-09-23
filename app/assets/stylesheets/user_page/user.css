@@ -58,6 +58,11 @@
   margin: 5% auto;
   text-align: center;
 }
+.field #image-list img{
+  width: 150px;
+  height: 150px;
+}
+
 .field textarea{
   border: 1px solid #ccc;
   width: 84%;

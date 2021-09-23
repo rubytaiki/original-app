@@ -8,7 +8,6 @@
       <%= form_with model: @hotel, local: true do |f| %>
       <%= render 'shared/error_messages', model: @hotel %>
       <div class="field">
-        <%# 商品画像  　　　　　　　　　　まだCSSついてない%>
         <div class="img-upload">
           <div class="weight-bold-text">
             商品画像
@@ -21,8 +20,9 @@
           </div>
         </div>
       </div>
-        <%# /商品画像 　　　　　　　　　　　　　　　　　　　　%>
-
+      <div class="field">
+        <div id="image-list"></div>
+      </div>
       <div class="field">
         <%= f.label :hotel_name %><br />
         <%= f.text_area :hotel_name, autofocus: true %>
